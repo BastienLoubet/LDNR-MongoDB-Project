@@ -9,48 +9,54 @@ require_once('./php/basic_functions.php');
 //Avant d'envoyer le premier header http
 
 //On cree le html
-make_html_start('Template','./css/template.css');
+make_html_start('Template','./css/choix.css');
 
 say('Mon super message de debug !');
 error('Mon super message d\'erreur !');
 $param = NULL;
 $test = true;
-if(isset($_GET[]))
+$res = NULL;
+
+if(!empty($_GET))
 {
     $param = $_GET;
 }
 else
 {
+    say('Test Mode!!');
     if($test)
     {
         $param = [
-            ville1 => [ville => 'Paris', dept => '75', region => 'Ile-De-France' ],
-            ville2 => [ville => 'Paris', dept => '75', region => 'Ile-De-France' ],
-            ville3 => [ville => 'Paris', dept => '75', region => 'Ile-De-France' ]
+            'ville1' => ['ville' => 'Paris', 'dept' => '75', 'region' => 'Ile-De-France' ],
+            'ville2' => ['ville' => 'Marseilles', 'dept' => '13', 'region' => 'PACA' ],
+            'ville3' => ['ville' => 'Toulouse', 'dept' => '31', 'region' => 'Midi-Pyrénées' ]
         ];
     }
 }
 
-echo '<form method="GET" action="">';
-echo '<fieldset>';
-echo '<legend>Choisissez une ville''</legend>';
-if(!$test)
+echo '<form method="GET" action="">'."\n";
+echo '<fieldset>'."\n";
+echo '<legend>Choisissez une ville</legend>'."\n";
+
+if(!empty($param))
 {   
+    
     foreach($param as $vals)
     {
-        foreach(vals as $key => $val)
-        {
-            echo '<label>ville: '.$val;
-            echo '<input type="radio" name="choix_ville" value='.$val.'>';
-            echo '</label>';
-        }
-    }       
+        echo '<p>'."\n";
+        echo '<input type="radio" name="choix_ville" value='.implode('_',$vals).'>'."\n";
+        echo implode(' - ',$vals);
+        echo '</label>'."\n";
+        echo '</p>'."\n";
+    }
+           
 }
 else{
-    error('la variable $_GET n\'existe pas.');
+    error('la variable $param est vide.');
 }
-echo '</fieldset>';
-echo '</form>';
+echo '<input type="submit" name="Valider"/>'."\n";
+echo '</fieldset>'."\n";
+echo '</form>'."\n";
 
 
 
