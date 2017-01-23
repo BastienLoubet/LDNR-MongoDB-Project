@@ -7,28 +7,20 @@ le département ou se situe la ville (optionnel),<input name=’dept’
 la région ou se situe la ville (optionnel),<input name=’region’
 un bouton de soumission du formulaire.
 */ 
-function InputGenerator ($name="nom", $plholder="plholder") {
-    echo '<input type="text" name=$nome placeholder=$plholder>';
+
+function InputGenerator ($name="nom",$plholder="placeholder") {
+    echo "<input type='text' name=$name placeholder=$plholder><br>";
 }
+echo '<div class="recherche">';
+echo '<fieldset>';
+echo '<form method="get" action="#">';
+InputGenerator ("villes" , "Villes");
+InputGenerator ("dept" , "Département");
+InputGenerator ("region" , "Régions");
+echo '<input class="Cnx" type="submit" name="Connexion">';
+echo '</input>';
+echo '</form>';
+echo '</fieldset>';
+echo '</div>';
 
-InputGenerator ("villes,villes")
-    
 ?>
-
-    <html>
-    <fieldset>
-        <div class="frm">
-            <form method="get" action="#">
-                <input type="text" name="villes" placeholder="Villes"></input>
-                <br>
-                <input type="text" name="dept" placeholder="Département"></input>
-                <br>
-                <input type="text" name="region" placeholder="Région"></input>
-                <br>
-                <input class="Cnx" type="submit" name="Connexion"></input>
-            </form>
-        </div>
-    </fieldset>
-
-
-    </html>
