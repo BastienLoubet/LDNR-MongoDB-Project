@@ -11,20 +11,17 @@ require_once('./php/basic_functions.php');
 //On cree le html
 make_html_start('Template','./css/choix.css');
 
-say('Mon super message de debug !');
-error('Mon super message d\'erreur !');
-$param = NULL;
-$test = true;
-$res = NULL;
+$param = NULL; //variable qui sera utilisée pour l'affichage des choix à l'utilisateur.
+$test = true; //variable permettant de mettre le script en mode test. en production il faut remettre cette variable a false.
 
-if(!empty($_GET))
+if(!empty($_GET)) //on vérifie si la variable est contient des informations.
 {
     $param = $_GET;
 }
-else
+else //si la variable $_GET est vide, on vérifie si le script est lancé en mode test.
 {
     say('Test Mode!!');
-    if($test)
+    if($test) //Le mode de test consiste à initier la variable $param avec un jeu de test.
     {
         $param = [
             'ville1' => ['ville' => 'Paris', 'dept' => '75', 'region' => 'Ile-De-France' ],
@@ -33,6 +30,8 @@ else
         ];
     }
 }
+
+//affichage du formulaire pour choisir la bonne ville.
 
 echo '<form method="GET" action="">'."\n";
 echo '<fieldset>'."\n";
@@ -44,15 +43,15 @@ if(!empty($param))
     foreach($param as $vals)
     {
         echo '<p>'."\n";
-        echo '<input type="radio" name="choix_ville" value='.implode('_',$vals).'>'."\n";
-        echo implode(' - ',$vals);
+        echo '<input type="radio" name="choix_ville" value='.implode('_',$vals).'>'."\n"; //affichage des boutons radio la valeur est la concaténation des chaînes villes, département et région
+        echo implode(' - ',$vals); //affichage du texte
         echo '</label>'."\n";
         echo '</p>'."\n";
     }
            
 }
 else{
-    error('la variable $param est vide.');
+    error('la variable $param est vide.'); //affichage d'un message d'erreur si la variable $param ne contient aucune information
 }
 echo '<input type="submit" name="Valider"/>'."\n";
 echo '</fieldset>'."\n";
@@ -61,4 +60,3 @@ echo '</form>'."\n";
 
 
 make_html_end();
-
