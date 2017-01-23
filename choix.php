@@ -1,6 +1,7 @@
 <?php
 /*
-Fichier template
+Si l'utilisateur souhaite une ville dont le nom existe en plusieurs endroits,
+cette page affiche les choix disponibles pour ce nom de ville ainsi que le département et la région.
 */
 require_once('./php/basic_functions.php');
 //Avant d'envoyer le premier header http
