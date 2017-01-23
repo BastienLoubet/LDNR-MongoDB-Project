@@ -1,5 +1,13 @@
-/* Pour les messages d'erreurs */
-p.error {
-    color: red;
-    font-weight: bold;
-}
+    /* Pour les messages d'erreurs */
+    
+    p.error {
+        color: red;
+        font-weight: bold;
+    }
+    
+    body {
+        width: 60em;
+        padding: 2em;
+        margin: auto;
+        background-image: linear-gradient(to top, #022841, #479cd3, #022841);
+    }
