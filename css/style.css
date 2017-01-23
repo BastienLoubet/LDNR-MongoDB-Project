@@ -6,8 +6,5 @@
     }
     
     body {
-        width: 60em;
-        padding: 2em;
-        margin: auto;
-        background-image: linear-gradient(to top, #022841, #479cd3, #022841);
+        background-image: linear-gradient( #022841, #479cd3) no-repeat;
     }
