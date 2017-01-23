@@ -1,5 +1,5 @@
 <?php
-header('Content-Type: text/html; charset=utf-8');
+//header('Content-Type: text/html; charset=utf-8');
 
 //FONCTIONS DE DEBUG 
 //automatise la mise en forme du print_r
@@ -9,12 +9,12 @@ function bprint_r($str) {
 
 //cree un message dans un paragraphe
 function say(string $str) {
-    echo "<p>$str</p>";
+    echo "<p>$str</p>\n";
 }
 
 //cree un message dans un paragraphe
 function error(string $str) {
-    echo "<p class=\"error\">$str</p>";
+    echo "<p class=\"error\">$str</p>\n";
 }
 
 //FONCTIONS pour creer le html
@@ -22,7 +22,7 @@ function error(string $str) {
 function html(string $bal,string $str,string $class='',string $sOptionSup=''){
     if($class == '') $classstr = '';
     else $classstr = "class='".htmlspecialchars($class)."'";
-    return "<$bal $classstr $sOptionSup>".$str."</$bal>";
+    return "<$bal $classstr $sOptionSup>".$str."</$bal>\n";
 }
 
 //
@@ -31,7 +31,7 @@ function make_nav_bar(){
 }
 
 //Cree le header standard de tout mes fichiers html
-function make_html_start(string $title, string $cssfile='./css/style.css') {
+function make_html_start(string $title, string $cssfile) {
     echo '<!DOCTYPE html>
         <html><head>';
     echo "<title> $title </title>";
