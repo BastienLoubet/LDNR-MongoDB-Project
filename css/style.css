@@ -1,0 +1,5 @@
+/* Pour les messages d'erreurs */
+p.error {
+    color: red;
+    font-weight: bold;
+}
