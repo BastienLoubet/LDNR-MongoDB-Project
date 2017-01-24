@@ -120,7 +120,7 @@ try{
         }
     }
     if(count($aVilles)==0 || count($aVilles)==false){
-        header("Location: ./accueil.php?".http_build_query($_GET).urlencode('&erreur=La requete ne retourne pas de resultats'));
+        header("Location: ./accueil.php?".http_build_query($_GET).'&erreur='.urlencode('La requete ne retourne pas de resultats'));
         exit();
     }
     if(count($aVilles)==1){
