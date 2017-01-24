@@ -5,6 +5,8 @@ p.error {
 
 body {
     background: linear-gradient( #022841, #479cd3) 0 0 fixed no-repeat;
+    background-image: url("./france.png"), linear-gradient( #022841, #479cd3) 0 0 fixed no-repeat;
+    /* W3C */
 }
 
 .cart:hover {
@@ -46,6 +48,10 @@ body {
     padding-right: 10%;
     padding-left: 20%;
     padding-bottom: 14%;
+    background-image: url("./france.png"), linear-gradient( #022841, #479cd3);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .carte {
@@ -57,6 +63,8 @@ body {
 }
 
 fieldset {
+    /*background-image: url("france.png");*/
+    /*background: linear-gradient( #022841, #479cd3, #479cd3);*/
     background: linear-gradient( #022841, #479cd3, #479cd3);
     border-color: #44aed1;
     border-radius: 20px;
