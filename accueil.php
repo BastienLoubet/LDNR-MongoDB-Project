@@ -12,10 +12,12 @@ make_nav_bar();
 make_html_start("Page d'accueil",'./css/accueil.css'); 
 
 function InputGenerator ($name="nom",$plholder="placeholder") {
-    echo "<input type='text' name=$name placeholder=$plholder><br>";
+    echo "<input type='text' class='rechrch' name=$name placeholder=$plholder><br>";
 }
 echo '<div class="recherche">';
 echo '<fieldset>';
+echo '<div class="rech">';
+echo 'Entrez le nom de la ville';
 echo '<form method="get" action="#">';
 InputGenerator ("villes" , "Villes");
 InputGenerator ("dept" , "Département");
@@ -23,6 +25,7 @@ InputGenerator ("region" , "Régions");
 echo '<input class="Cnx" type="submit" name="Connexion">';
 echo '</input>';
 echo '</form>';
+echo '</div>';
 echo '</fieldset>';
 echo '</div>';
 
