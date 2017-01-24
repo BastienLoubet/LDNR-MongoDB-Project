@@ -1,0 +1,11 @@
+.submit {
+    font-size: 1.2em;
+    width: auto;
+    height: 2em;
+    text-align: center;
+    color: #DDD;
+    background: #444;
+    background: linear-gradient(#555, #2c2c2c);
+    border-radius: 0.5em;
+    border-color: #444;
+}

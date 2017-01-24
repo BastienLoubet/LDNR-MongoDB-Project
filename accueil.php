@@ -22,7 +22,7 @@ echo '<form method="get" action="./select.php">';
 InputGenerator ("villes" , "Villes");
 InputGenerator ("dept" , "Département");
 InputGenerator ("region" , "Régions");
-echo '<input class="Cnx" type="submit" name="accueil" value=Rechercher>';
+echo '<input class="submit" type="submit" name="accueil" value=Rechercher>';
 echo '</input>';
 echo '</form>';
 echo '</div>';

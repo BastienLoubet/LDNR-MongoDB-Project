@@ -7,6 +7,18 @@ body {
     background: linear-gradient( #022841, #479cd3) 0 0 fixed no-repeat;
 }
 
+.submit {
+    font-size: 1.2em;
+    width: auto;
+    height: 2em;
+    text-align: center;
+    color: #DDD;
+    background: #444;
+    background: linear-gradient(#555, #2c2c2c);
+    border-radius: 0.5em;
+    border-color: #444;
+}
+
 .recherche {
     color: white;
     padding-top: 2%;
@@ -15,7 +27,7 @@ body {
 }
 
 .rech {
-    padding-top: 3%;
+    padding-top: 10%;
     padding-right: 10%;
     padding-left: 10%;
     padding-bottom: 20%;
