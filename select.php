@@ -1,4 +1,5 @@
 <?php
+make_nav_bar();
 /*
 ‘ header("Location: http://www.example.com/");‘
 http_build_query() pour passer des variables en get sur une url
