@@ -38,5 +38,4 @@ if(isset($_GET['erreur'])){
     error($_GET['erreur']);
 }
 
-
 make_html_end();
