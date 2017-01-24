@@ -5,6 +5,7 @@ cette page affiche les choix disponibles pour ce nom de ville ainsi que le dépa
 Contient un liens pour revenir vers select.php avec les choix envoyer par select.php 
 et fabrique le formulaire.
 */
+make_nav_bar();
 require_once('./php/basic_functions.php');
 //Avant d'envoyer le premier header http
 

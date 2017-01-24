@@ -1,4 +1,5 @@
 <?php
+make_nav_bar();
 /*
 Un utilisateur authentifié aura également accès à une page de maintenance décrite ci-après.
 
