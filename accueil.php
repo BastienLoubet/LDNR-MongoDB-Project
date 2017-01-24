@@ -18,7 +18,7 @@ echo '<div class="recherche">';
 echo '<fieldset>';
 echo '<div class="rech">';
 echo 'Entrez le nom de la ville';
-echo '<form method="get" action="#">';
+echo '<form method="get" action="./select.php">';
 InputGenerator ("villes" , "Villes");
 InputGenerator ("dept" , "Département");
 InputGenerator ("region" , "Régions");
