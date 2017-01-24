@@ -19,36 +19,30 @@ require_once('./php/basic_functions.php');
 
 //On cree le html
 make_html_start('Authentification','./css/auth.css');
+make_nav_bar();
 
-say('Mon super message de debug !');
-error('Mon super message d\'erreur !');
+$identifiant = "";
 
-
-
-echo '<div class="connexion">';
-echo '<form method=POST action="">';
-echo '<fieldset>';
-echo '<legend>Authentifiez-vous</legend>';
-echo '<input type="text" name="identifiant" value=""';
-echo '<input type="password" name="mot_de_passe" value=""';
-echo '<input type="submit" name="Connexion" value="Connexion"';
-echo '</fieldset>';
-echo '</form>';
-echo '</div>';
-
-echo '<div class="inscription">';
-echo '<form method=POST action="">';
-echo '<fieldset>';
-echo '<legend>Inscrivez-vous</legend>';
-echo '<input type="text" name="identifiant" value=""';
-echo '<input type="password" name="mot_de_passe" value=""';
-echo '<input type="submit" name="Inscription" value="Inscription"';
-echo '</fieldset>';
-echo '</form>';
-echo '</div>';
-
-echo html('p','Voici un super parragraphe.');
-echo html('div', html('p','Un truc dans un div'));
+echo '<div class="recherche">'."\n";
+echo '<form method=POST action="">'."\n";
+echo '<fieldset class="fieldset">'."\n";
+echo '<legend>Authentifiez-vous</legend>'."\n";
+echo '<div class=auth_champs>'."\n";
+echo '<label for="identifiant">identifiant</label>';
+if(!empty($_POST['identifiant']))
+{
+    $identifiant = $_POST['identifiant'];
+}
+echo '<input type="text" name="identifiant" value="'.$identifiant.'"/>'."\n";
+echo '<label for="mot_de_passe">Mot de passe</label>';
+echo '<input type="password" name="mot_de_passe" value=""/>'."\n";
+echo '</div>'."\n";
+echo '<div class="auth_submit_zone">'."\n";
+echo '<input class="submit auth__auth_submit" type="submit" name="Connexion" value="Connexion"/>'."\n";
+echo '</div>'."\n";
+echo '</fieldset>'."\n";
+echo '</form>'."\n";
+echo '</div>'."\n";
 
 
 make_html_end();
