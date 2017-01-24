@@ -42,12 +42,6 @@ function make_bprint(&$obj){
     exit();
 }
 
-//Si la requete vient de nul part
-/*if (!isset($_GET['submit'])) {
-    header("Location: ./accueil.php");
-    exit();
-}*/
-
 //renvoie un tableau avec la region et le departement de toute les villes qui ont le nom $name une par ligne
 function mongoSearch($name,$mongo){
     $aRes=[];
@@ -79,19 +73,30 @@ try{
     // création de l'instance de connexion
     $mongo = new MongoDB\Driver\Manager($dsn);
     //Si la requete vient de la page accueil.php
+    $bTest=false;
     if(isset($_GET['accueil'])){
         //On prend les parametres dont on a besoin
         $name = get_var($_GET['villes']);
         $dept = get_var($_GET['dept']);
         $region = get_var($_GET['region']);
+        $bTest=true;
     }
-    if(isset($_GET['select'])){
+    if(isset($_GET['choix'])){
         //On prend les parametres dont on a besoin
-        make_bprint($_GET);
-        $name = get_var($_GET['nomVille']);
-        $dept = get_var($_GET['nomDept']);
-        $region = get_var($_GET['nomRegion']);
+        $aVar = explode('_',$_GET['choix_ville']);
+        $name = get_var($aVar[0]);
+        $dept = get_var($aVar[1]);
+        $region = get_var($aVar[2]);
+        //make_bprint($aVar[2]);
+        $bTest=true;
     }
+    
+    //Si la requete vient de nul part
+    if (!$bTest) {
+        header("Location: ./accueil.php");
+        exit();
+    }
+    
     
     if($name == ''){
         //renvoie un message d'erreur
@@ -101,15 +106,15 @@ try{
 
     $aVilles = mongoSearch($name,$mongo);
     if($dept != ''){
-        foreach($aVilles as $key => $val){
-            if($val->nomDept != $dept){
+        foreach($aVilles as $key => $aVal){
+            if($aVal['nomDept'] != $dept){
                 unset($aVilles[$key]);
             }
         }
     }
     if($region != ''){
-        foreach($aVilles as $key => $val){
-            if($val->nomRegion != $region){
+        foreach($aVilles as $key => $aVal){
+            if($aVal['nomRegion'] != $region){
                 unset($aVilles[$key]);
             }
         }
@@ -119,7 +124,8 @@ try{
         exit();
     }
     if(count($aVilles)==1){
-        header("Location: ./affichage.php?".http_build_query($aVilles[0]));
+        reset($aVilles);//curseur au debut
+        header("Location: ./affichage.php?".http_build_query(current($aVilles)));
         exit();
     }
     if(count($aVilles)>1){

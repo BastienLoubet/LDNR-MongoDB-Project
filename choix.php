@@ -49,7 +49,7 @@ if(!empty($param))
          //affichage des boutons radio la valeur est la concaténation des chaînes villes, département et région
         //echo implode(' - ',$vals); //affichage du texte
     }
-    echo '<input class="submit" type="submit" name="Select" value="Envoyer">'."\n";
+    echo '<input class="submit" type="submit" name="choix" value="Envoyer">'."\n";
            
 }
 else{
