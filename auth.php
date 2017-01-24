@@ -20,13 +20,9 @@ require_once('./php/basic_functions.php');
 //On cree le html
 make_html_start('Authentification','./css/auth.css');
 
-say('Mon super message de debug !');
-error('Mon super message d\'erreur !');
-
-
 
 echo '<div class="connexion">';
-echo '<form method=POST action="">';
+echo '<form method=POST action="./verif.php">';
 echo '<fieldset>';
 echo '<legend>Authentifiez-vous</legend>';
 echo '<input type="text" name="identifiant" value=""';
@@ -46,9 +42,6 @@ echo '<input type="submit" name="Inscription" value="Inscription"';
 echo '</fieldset>';
 echo '</form>';
 echo '</div>';
-
-echo html('p','Voici un super parragraphe.');
-echo html('div', html('p','Un truc dans un div'));
 
 
 make_html_end();
