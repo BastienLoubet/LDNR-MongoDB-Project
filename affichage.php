@@ -16,16 +16,16 @@ make_nav_bar();
 
 $cp=[];
 echo"<div class='affichage'>";
-if(isset($_GET['nom'])){
-    $nom=$_GET['nom'];
+if(isset($_GET['nomVille'])){
+    $nom=$_GET['nomVille'];
 	echo "<span> $nom</span>\n";
 }
-if(isset($_GET['dept'])){
-    $dtp=$_GET['dept'];
+if(isset($_GET['codeDept'])){
+    $dtp=$_GET['codeDept'];
 	echo" <span>$dtp</span>\n";
 }
-if(isset($_GET['region'])){
-    $region=$_GET['region'];
+if(isset($_GET['nomRegion'])){
+    $region=$_GET['nomRegion'];
 	echo "<span>$region</span>\n";
 }else 
 {
