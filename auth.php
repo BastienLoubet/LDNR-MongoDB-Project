@@ -10,9 +10,6 @@ Le maintien de l'authentification sera réalisé par le mécanisme des /cookies/
 les utilisateurs non authentifiés seront redirigés vers la page d'accueil par une directive HTTP 303 (voir les redirections sur fr.wikipedia.org/wiki/Liste_des_codes_HTTP ainsi que la technique de redirection depuis PHP sur php.net/manual/fr/function.header.php
 */
 
-/*
-Fichier template
-*/
 require_once('./php/basic_functions.php');
 //Avant d'envoyer le premier header http
 
@@ -21,15 +18,16 @@ require_once('./php/basic_functions.php');
 make_html_start('Authentification','./css/auth.css');
 make_nav_bar();
 
-$identifiant = "";
+$identifiant = "";//variable recevant l'identifiant s'il est deja défini dans la variable $_POST.
 
+//Le code HTML permettant de générer le formulaire de connexion
 echo '<div class="recherche">'."\n";
 echo '<form method=POST action="">'."\n";
 echo '<fieldset class="fieldset">'."\n";
 echo '<legend>Authentifiez-vous</legend>'."\n";
 echo '<div class=auth_champs>'."\n";
 echo '<label for="identifiant">identifiant</label>';
-if(!empty($_POST['identifiant']))
+if(!empty($_POST['identifiant'])) //si l'identifiant existe deja on rempli le champs idoine avec la valeur.'
 {
     $identifiant = $_POST['identifiant'];
 }
