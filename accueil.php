@@ -7,6 +7,8 @@ le département ou se situe la ville (optionnel),<input name=’dept’
 la région ou se situe la ville (optionnel),<input name=’region’
 un bouton de soumission du formulaire.
 */ 
+require_once('./php/basic_functions.php');
+make_html_start;
 
 function InputGenerator ($name="nom",$plholder="placeholder") {
     echo "<input type='text' name=$name placeholder=$plholder><br>";
