@@ -22,7 +22,7 @@ echo '<form method="get" action="#">';
 InputGenerator ("villes" , "Villes");
 InputGenerator ("dept" , "Département");
 InputGenerator ("region" , "Régions");
-echo '<input class="Cnx" type="submit" name="Connexion">';
+echo '<input class="Cnx" type="submit" name="accueil" value=Rechercher>';
 echo '</input>';
 echo '</form>';
 echo '</div>';

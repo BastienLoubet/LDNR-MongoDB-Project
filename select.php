@@ -43,10 +43,10 @@ function make_bprint(&$obj){
 }
 
 //Si la requete vient de nul part
-if (!isset($_GET['submit'])) {
+/*if (!isset($_GET['submit'])) {
     header("Location: ./accueil.php");
     exit();
-}
+}*/
 
 //renvoie un tableau avec la region et le departement de toute les villes qui ont le nom $name une par ligne
 function mongoSearch($name,$mongo){
@@ -79,49 +79,57 @@ try{
     // création de l'instance de connexion
     $mongo = new MongoDB\Driver\Manager($dsn);
     //Si la requete vient de la page accueil.php
-    if($_GET['submit'] == 'accueil' ){
+    if(isset($_GET['accueil'])){
         //On prend les parametres dont on a besoin
-        $name = get_var($_GET['nom']);
+        $name = get_var($_GET['villes']);
         $dept = get_var($_GET['dept']);
         $region = get_var($_GET['region']);
-
-        if($name == ''){
-            //renvoie un message d'erreur
-            header("Location: ./accueil.php?erreur=".urlencode('Le nom doit être renseigné !'));
-            exit();
-        }
-
-        $aVilles = mongoSearch($name,$mongo);
-        if($dept != ''){
-            foreach($aVilles as $key => $val){
-                if($val->nomDept != $dept){
-                    unset($aVilles[$key]);
-                }
-            }
-        }
-        if($region != ''){
-            foreach($aVilles as $key => $val){
-                if($val->nomRegion != $region){
-                    unset($aVilles[$key]);
-                }
-            }
-        }
-        if(count($aVilles)==0 || count($aVilles)==false){
-            header("Location: ./accueil.php?".http_build_query($_GET).urlencode('&erreur=La requete ne retourne pas de resultats'));
-            exit();
-        }
-        if(count($aVilles)==1){
-            header("Location: ./affichage.php?".http_build_query($aVilles[0]));
-            exit();
-        }
-        if(count($aVilles)>1){
-            header("Location: ./choix.php?".http_build_query($aVilles[0]));
-            exit();
-        }
-        make_html_start('Test','./css/template.css');
-        say('Pas rediriger !');
-        make_html_end();
     }
+    if(isset($_GET['select'])){
+        //On prend les parametres dont on a besoin
+        make_bprint($_GET);
+        $name = get_var($_GET['nomVille']);
+        $dept = get_var($_GET['nomDept']);
+        $region = get_var($_GET['nomRegion']);
+    }
+    
+    if($name == ''){
+        //renvoie un message d'erreur
+        header("Location: ./accueil.php?erreur=".urlencode('Le nom doit être renseigné !'));
+        exit();
+    }
+
+    $aVilles = mongoSearch($name,$mongo);
+    if($dept != ''){
+        foreach($aVilles as $key => $val){
+            if($val->nomDept != $dept){
+                unset($aVilles[$key]);
+            }
+        }
+    }
+    if($region != ''){
+        foreach($aVilles as $key => $val){
+            if($val->nomRegion != $region){
+                unset($aVilles[$key]);
+            }
+        }
+    }
+    if(count($aVilles)==0 || count($aVilles)==false){
+        header("Location: ./accueil.php?".http_build_query($_GET).urlencode('&erreur=La requete ne retourne pas de resultats'));
+        exit();
+    }
+    if(count($aVilles)==1){
+        header("Location: ./affichage.php?".http_build_query($aVilles[0]));
+        exit();
+    }
+    if(count($aVilles)>1){
+        header("Location: ./choix.php?".http_build_query($aVilles));
+        exit();
+    }
+    make_html_start('Test','./css/template.css');
+    say('Pas rediriger !');
+    make_html_end();
+
 }catch (Exception $e){
     echo "Exception intercepte: ".$e->getMessage();
 }
