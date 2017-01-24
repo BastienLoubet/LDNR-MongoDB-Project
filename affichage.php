@@ -9,21 +9,29 @@ require_once('./php/basic_functions.php');
 
 //On cree le html
 make_html_start('Template','./css/affichage.css');
-function afficheparam(string $arg){
-  if(isset($_GET[$arg])){
-    $param=$_GET[$arg];
-	echo "<span> $param</span>\n";
+function afficheparam(string $arg, string $label){
+  if(isset($arg)){
+      echo"<div class='affichage'>";
+      echo "<span class='label'> $label</span>\n";
+	  echo "<span class='res'> $arg</span>\n";
+      echo"</div>";
 }  
     
 }
 make_nav_bar();
 
 $cp=[];
-echo"<div class='affichage'>";
-$atab=['nomVille', 'codeDept','nomRegion','cp','lat','lon','pop'];
+
+$atab=[[$_GET['nomVille'],'nom:'],
+       [$_GET['nomDept'].' ('.$_GET['codeDept'].')','Département:'],
+       [$_GET['nomRegion'],'Region:'],
+       ['cp','code postal:'],
+       ['lat','lattitude:'],
+       ['lon','longitude:'],
+       ['pop','population:']];
 foreach($atab as $val){
-    afficheparam($val);
+    afficheparam($val[0],$val[1]);
 }
-echo"</div>";
+
 
 make_html_end();
