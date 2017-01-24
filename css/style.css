@@ -1,59 +1,81 @@
-         p.error {
-     color: red;
-     font-weight: bold;
- }
- 
- body {
-     background: linear-gradient( #022841, #479cd3) 0 0 fixed no-repeat;
- }
- 
- fieldset {
-     background: linear-gradient( #022841, #479cd3, #479cd3, #022841);
-     border-color: #44aed1;
-     border-radius: 20px;
-     border-style: 3px;
- }
- 
- ul.topnav li a {
-     display: block;
-     color: white;
-     font-size: 2em;
-     text-align: center;
-     padding: 14px 16px;
-     text-decoration: none;
-     height: 2em;
- }
- 
- li {
-     width: 20em;
- }
- 
- ul.topnav {
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     overflow: hidden;
-     background: linear-gradient(darkgray, lightblue);
-     border-radius: 20px;
- }
- 
- ul.topnav li {
-     float: left;
- }
- 
- ul.topnav li a:hover:not(.active) {
-     background-color: #479cd3;
-     transition: 0.3s ease-in;
-     box-shadow: 0 0 5px white;
-     width: 100%;
- }
- 
- @media screen and (max-width: 1050px) {
-     ul.sidenav {
-         width: 100%;
-         height: auto;
-         position: relative;
-     }
-     ul.sidenav li a {
-         float: left;
-         padding: 15px;
+p.error {
+    color: red;
+    font-weight: bold;
+}
+
+body {
+    background: linear-gradient( #022841, #479cd3) 0 0 fixed no-repeat;
+}
+
+.recherche {
+    color: white;
+    padding-top: 2%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.rech {
+    padding-top: 3%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 20%;
+}
+
+fieldset {
+    background: linear-gradient( #022841, #479cd3, #479cd3);
+    border-color: #44aed1;
+    border-radius: 20px;
+    border-style: 4px;
+}
+
+.rechrch {
+    border-radius: 10px;
+    width: 30em;
+    height: 3em;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 2em;
+}
+
+li {
+    width: 20em;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(darkgray, lightblue);
+    border-radius: 20px;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #479cd3;
+    transition: 0.3s ease-in;
+    box-shadow: 0 0 5px white;
+    width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+}
