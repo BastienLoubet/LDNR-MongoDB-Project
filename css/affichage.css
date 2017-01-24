@@ -1,0 +1,12 @@
+span {
+    display: block;
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    color: orange;
+}
+
+.affichage {
+    align-content: center;
+    text-align: center;
+    margin-top: 1.5em;
+}
