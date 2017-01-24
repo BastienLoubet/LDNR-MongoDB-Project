@@ -8,19 +8,17 @@ la région ou se situe la ville (optionnel),<input name=’region’
 un bouton de soumission du formulaire.
 */ 
 require_once('./php/basic_functions.php');
-make_nav_bar();
+
 make_html_start("Page d'accueil",'./css/accueil.css'); 
+make_nav_bar();
 echo '<div class="logo">';
-echo '<img src="newlog1.png" alt="carte" class="cart">';
+echo '<img src="./img/newlog1.png" alt="carte" class="cart">';
 echo '</div>';
 function InputGenerator ($name="nom",$plholder="placeholder") {
     echo "<input type='text' class='rechrch' name=$name placeholder=$plholder><br>";
 }
 echo '<div class="recherche">';
 echo '<fieldset>';
-echo '<div class="ctfr">';
-echo '<img src="france.png" alt="carte" class="carte">';
-echo '</div>';
 echo '<div class="rech">';
 echo '<h1>';
 echo 'Entrez le nom de la ville';
@@ -36,4 +34,9 @@ echo '</div>';
 echo '</fieldset>';
 echo '</div>';
 
-?>
+if(isset($_GET['erreur'])){
+    error($_GET['erreur']);
+}
+
+
+make_html_end();

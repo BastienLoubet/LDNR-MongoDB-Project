@@ -1,8 +1,13 @@
 span {
-    display: block;
     margin-top: 0.5em;
     font-size: 1.5em;
     color: orange;
+}
+
+.label {
+    color: deeppink;
+    border-bottom: 1px solid;
+    margin-right: 0.5em;
 }
 
 .affichage {
@@ -10,3 +15,5 @@ span {
     text-align: center;
     margin-top: 1.5em;
 }
+
+{}
