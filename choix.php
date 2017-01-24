@@ -32,7 +32,6 @@ else //si la variable $_GET est vide, on vérifie si le script est lancé en mod
 }
 
 //affichage du formulaire pour choisir la bonne ville.
-
 echo '<form method="GET" action="./select.php">'."\n";
 echo '<fieldset class="fieldset">'."\n";
 echo '<legend>Choisissez une ville</legend>'."\n";
@@ -42,10 +41,8 @@ if(!empty($param))
     
     foreach($param as $vals)
     {
-        //echo "<div>"."\n";
         echo '<input class="submit" type="submit" name="choix_ville" value='.implode('_',$vals).'>'."\n"; //affichage des boutons radio la valeur est la concaténation des chaînes villes, département et région
         //echo implode(' - ',$vals); //affichage du texte
-        //echo '</div>'."\n";
     }
            
 }
