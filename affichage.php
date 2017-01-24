@@ -25,13 +25,14 @@ $cp=[];
 $atab=[[$_GET['nomVille'],'nom:'],
        [$_GET['nomDept'].' ('.$_GET['codeDept'].')','Département:'],
        [$_GET['nomRegion'],'Region:'],
-       ['cp','code postal:'],
-       ['lat','lattitude:'],
-       ['lon','longitude:'],
-       ['pop','population:']];
+       [$_GET['cp'],'code postal:'],
+       [$_GET['lat'],'lattitude:'],
+       [$_GET['lon'],'longitude:'],
+       [$_GET['pop'],'population:']];
+echo"<div class='param'>";
 foreach($atab as $val){
     afficheparam($val[0],$val[1]);
 }
-
+echo"</div>";
 
 make_html_end();
