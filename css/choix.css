@@ -1,15 +1,4 @@
-#submit
-{
-    font-size: 1.6em;
-    width: 11em;
-    height: 2em;
-    text-align: center;
-    color: #000;
-    background: #444;
-    background: linear-gradient(#555,#2c2c2c);
-    border-radius: 0.5em;
-    border-color: none;
-}
+
 
 .submit
 {
@@ -28,6 +17,7 @@
 {
     color: #DDD;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    width: auto;
 }
 

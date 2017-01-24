@@ -9,7 +9,7 @@ require_once('./php/basic_functions.php');
 //Avant d'envoyer le premier header http
 
 //On cree le html
-make_html_start('Template','./css/choix.css');
+make_html_start('Choisissez la ville','./css/choix.css');
 
 $param = NULL; //variable qui sera utilisée pour l'affichage des choix à l'utilisateur.
 $test = true; //variable permettant de mettre le script en mode test. en production il faut remettre cette variable a false.
