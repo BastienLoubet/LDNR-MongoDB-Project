@@ -6,10 +6,10 @@
     }
     
     body {
-        background: linear-gradient(to top, #022841, #479cd3);
+        background: linear-gradient( #022841, #479cd3) 0 0 fixed no-repeat;
     }
     
     fieldset {
-        background: linear-gradient(to top bottom, #022841, #479cd3, #479cd3, #022841);
+        background: linear-gradient( #022841, #479cd3, #479cd3, #022841);
         border-color: #44aed1;
     }
