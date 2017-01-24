@@ -16,9 +16,9 @@ require_once('./php/basic_functions.php');
 
 //On cree le html
 make_html_start('Authentification','./css/auth.css');
-<<<<<<< HEAD
-make_nav_bar();
 
+make_nav_bar();
+echo '<img src="./img/newlog1.png" alt="carte" class="cart">';
 $identifiant = "";//variable recevant l'identifiant s'il est deja défini dans la variable $_POST.
 
 //Le code HTML permettant de générer le formulaire de connexion
@@ -42,7 +42,6 @@ echo '</div>'."\n";
 echo '</fieldset>'."\n";
 echo '</form>'."\n";
 echo '</div>'."\n";
-=======
 
 
 echo '<div class="connexion">';
@@ -66,7 +65,7 @@ echo '<input type="submit" name="Inscription" value="Inscription"';
 echo '</fieldset>';
 echo '</form>';
 echo '</div>';
->>>>>>> b6427c27688da45116706e90ea3eb1246f284593
+
 
 
 make_html_end();
