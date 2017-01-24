@@ -42,14 +42,12 @@ if(!empty($param))
     
     foreach($param as $vals)
     {
+        //affichage des boutons radio la valeur est la concaténation des chaînes villes, département et région
         echo '<label>';
         echo '<input type="radio" name="choix_ville" value="'.$vals['nomVille'].'_'.$vals['nomDept'].'_'.$vals['nomRegion'].'">';
         echo $vals['nomVille'].' ('.$vals['codeDept'].') '.$vals['nomRegion'].'</label>'."\n";
-
-         //affichage des boutons radio la valeur est la concaténation des chaînes villes, département et région
-        //echo implode(' - ',$vals); //affichage du texte
     }
-    echo '<input class="submit" type="submit" name="choix" value="Envoyer">'."\n";
+    echo '<input class="submit choix_submit" type="submit" name="choix" value="Envoyer">'."\n";
            
 }
 else{
