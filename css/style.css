@@ -33,7 +33,7 @@ body {
 }
 
 .logo {
-    padding-top: 2%;
+    padding-top: 3%;
     padding-left: 2%;
     display: flex;
     flex: left;
@@ -88,7 +88,6 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /*background: linear-gradient(darkgray, lightblue);*/
     border-radius: 20px;
     color: #DDD;
     background: #444;

@@ -11,7 +11,7 @@ require_once('./php/basic_functions.php');
 make_nav_bar();
 make_html_start("Page d'accueil",'./css/accueil.css'); 
 echo '<div class="logo">';
-echo '<img src="newlog1.png" alt="carte" class="cart">';
+echo '<img src="./img/newlog1.png" alt="carte" class="cart">';
 echo '</div>';
 function InputGenerator ($name="nom",$plholder="placeholder") {
     echo "<input type='text' class='rechrch' name=$name placeholder=$plholder><br>";
