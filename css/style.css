@@ -6,7 +6,7 @@ p.error {
 body {
     background: linear-gradient( #022841, #479cd3) 0 0 fixed no-repeat;
     background-image: url("./france.png"), linear-gradient( #022841, #479cd3) 0 0 fixed no-repeat;
-    /* W3C */
+    background-image: url("./france.png"), linear-gradient( #022841, #479cd3) 0 0 fixed no-repeat;
 }
 
 .cart:hover {
