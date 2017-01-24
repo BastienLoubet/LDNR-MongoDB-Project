@@ -18,9 +18,6 @@ function InputGenerator ($name="nom",$plholder="placeholder") {
 }
 echo '<div class="recherche">';
 echo '<fieldset>';
-echo '<div class="ctfr">';
-echo '<img src="france.png" alt="carte" class="carte">';
-echo '</div>';
 echo '<div class="rech">';
 echo '<h1>';
 echo 'Entrez le nom de la ville';
@@ -32,6 +29,9 @@ InputGenerator ("region" , "Régions");
 echo '<input class="submit" type="submit" name="accueil" value=Rechercher>';
 echo '</input>';
 echo '</form>';
+echo '</div>';
+echo '<div class="ctfr">';
+echo '<img src="france.png" alt="carte" class="carte">';
 echo '</div>';
 echo '</fieldset>';
 echo '</div>';
