@@ -6,7 +6,7 @@
     }
     
     body {
-        background: linear-gradient(to top bottom #022841, #479cd3);
+        background: linear-gradient(to top bottom, #022841, #479cd3);
     }
     
     fieldset {
