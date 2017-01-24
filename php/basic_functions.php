@@ -27,7 +27,9 @@ function html(string $bal,string $str,string $class='',string $sOptionSup=''){
 
 //
 function make_nav_bar(){
+    
     echo '<ul class="topnav">';
+    
     echo '<li>';
     echo'<a href="accueil.php">Accueil</a>';
     echo '</li>';
