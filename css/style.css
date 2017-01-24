@@ -12,4 +12,42 @@
     fieldset {
         background: linear-gradient( #022841, #479cd3, #479cd3, #022841);
         border-color: #44aed1;
+        border-radius: 20px;
+        border-style: 3px;
+    }
+    /*.navbar {
+        height: 10em;
+        width: 100%;
+        background: lightgrey;
+        border-bottom: 3px solid black;
+    }*/
+    
+    ul.topnav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        height: 10em;
+    }
+    
+    li {
+        width: 20em;
+    }
+    
+    ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: linear-gradient(darkgray, lightblue);
+        border-radius: 20px;
+    }
+    
+    ul.topnav li {
+        float: left;
+    }
+    
+    ul.topnav li a:hover:not(.active) {
+        background-color: #479cd3;
     }
