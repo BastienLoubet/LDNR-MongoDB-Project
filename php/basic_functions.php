@@ -53,5 +53,5 @@ function make_html_start(string $title, string $cssfile='') {
 
 //ferme les balises ouverte par make_html_start
 function make_html_end(){
-    echo '</body></html>\n';
+    echo '</body></html>';
 }
