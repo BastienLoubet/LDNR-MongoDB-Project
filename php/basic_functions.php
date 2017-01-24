@@ -27,18 +27,14 @@ function html(string $bal,string $str,string $class='',string $sOptionSup=''){
 
 //
 function make_nav_bar(){
-    echo html('div','Ma barre de navigation','navbar');
-    function InputGenerator ($name="nom",$plholder="placeholder") {
-    echo "<input type='text' name=$name placeholder=$plholder><br>";
-}
-echo '<fieldset>';
-echo '<form method="get" action="#">';
-InputGenerator ("id" , "Identifiant");
-InputGenerator ("mdp" , "Mot de passe");
-echo '<input class="Cnx" type="submit" name="Connexion">';
-echo '</input>';
-echo '</form>';
-echo '</fieldset>';
+    echo '<ul class="topnav">';
+    echo '<li>';
+    echo'<a href="accueil.php">Accueil</a>';
+    echo '</li>';
+    echo '<li>';
+    echo'<a href="auth.php">Connexion</a>';
+    echo '</li>';
+    echo '</ul>';
 }
 
 //Cree le header standard de tout mes fichiers html

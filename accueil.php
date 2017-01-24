@@ -8,7 +8,8 @@ la région ou se situe la ville (optionnel),<input name=’region’
 un bouton de soumission du formulaire.
 */ 
 require_once('./php/basic_functions.php');
-make_html_start;
+make_nav_bar();
+make_html_start("Page d'accueil",'./css/accueil.css'); 
 
 function InputGenerator ($name="nom",$plholder="placeholder") {
     echo "<input type='text' name=$name placeholder=$plholder><br>";
