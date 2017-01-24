@@ -29,7 +29,7 @@ function html(string $bal,string $str,string $class='',string $sOptionSup=''){
 function make_nav_bar(){
     echo html('div','Ma barre de navigation','navbar');
    echo'<a href="accueil.php">Accueil</a>';
-    echo'<a href="auth.php">Accueil</a>';
+    echo'<a href="auth.php">Connexion</a>';
 }
 
 //Cree le header standard de tout mes fichiers html
