@@ -31,10 +31,12 @@ echo '<input class="submit" type="submit" name="accueil" value=Rechercher>';
 echo '</input>';
 echo '</form>';
 echo '</div>';
-/*echo '<div class="ctfr">';
-echo '<img src="france.png" alt="carte" class="carte">';
-echo '</div>';*/
 echo '</fieldset>';
 echo '</div>';
 
-?>
+if(isset($_GET['erreur'])){
+    error($_GET['erreur']);
+}
+
+
+make_html_end();
