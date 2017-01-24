@@ -15,20 +15,15 @@
         border-radius: 20px;
         border-style: 3px;
     }
-    /*.navbar {
-        height: 10em;
-        width: 100%;
-        background: lightgrey;
-        border-bottom: 3px solid black;
-    }*/
     
     ul.topnav li a {
         display: block;
         color: white;
+        font-size: 3em;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        height: 10em;
+        height: 3em;
     }
     
     li {
