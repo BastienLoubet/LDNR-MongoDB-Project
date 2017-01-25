@@ -33,7 +33,7 @@ echo '<h1>';
 echo 'Entrez le nom de la ville';
 echo '</h1>';
 echo '<form method="get" action="./replace.php">';
-echo "<p>Villes a changer</p>/n";
+echo "<p>Ville a changer</p>/n";
 InputGenerator ("villes" , "Villes");
 InputGenerator ("dept" , "Département");
 InputGenerator ("region" , "Régions");
@@ -41,7 +41,11 @@ echo "<p> entree a modifier </p>/n";
 InputGenerator ("cp" , "Code postal");
 InputGenerator ("pop" , "Population");
 if($_SESSION['connect']=='admin'){
-    
+    echo "<p>Region a changer</p>/n";
+    InputGenerator ("regionChange" , "Region");
+    echo "<p> entree a modifier </p>/n";
+    InputGenerator ("cp" , "Code postal");
+    InputGenerator ("pop" , "Population");
 }
 echo '<input class="submit" type="submit" name="maint" value=Remplacer>';
 echo '</form>';
