@@ -31,7 +31,34 @@ if(time() - $_SESSION('last_connect') < sessionTime ){
 
 make_html_start('Edition');
 
+
 make_nav_bar();
+
+echo '<div class="logo">';
+echo '<img src="./img/newlog1.png" alt="carte" class="cart">';
+echo '</div>';
+function InputGenerator ($name="nom",$plholder="placeholder") {
+    echo "<input type='text' class='rechrch' name=$name placeholder=$plholder><br>";
+}
+echo '<div class="recherche">';
+echo '<fieldset>';
+echo '<div class="rech">';
+echo '<h1>';
+echo 'Entrez le nom de la ville';
+echo '</h1>';
+echo '<form method="get" action="./replace.php">';
+InputGenerator ("villes" , "Villes");
+InputGenerator ("dept" , "Département");
+InputGenerator ("region" , "Régions");
+echo '<input class="submit" type="submit" name="maint" value=Remplacer>';
+echo '</form>';
+echo '</div>';
+echo '</fieldset>';
+echo '</div>';
+
+if(isset($_GET['erreur'])){
+    error($_GET['erreur']);
+}
 
 make_html_end();
 //Les lignes suivante ne test que si la session a ete cree et pas si les identifiants ont ete verifier sur la base de donnees

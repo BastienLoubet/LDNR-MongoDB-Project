@@ -28,7 +28,6 @@ InputGenerator ("villes" , "Villes");
 InputGenerator ("dept" , "Département");
 InputGenerator ("region" , "Régions");
 echo '<input class="submit" type="submit" name="accueil" value=Rechercher>';
-echo '</input>';
 echo '</form>';
 echo '</div>';
 echo '</fieldset>';
