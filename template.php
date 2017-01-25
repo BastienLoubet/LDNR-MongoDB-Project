@@ -20,4 +20,5 @@ error('Mon super message d\'erreur !');
 echo html('p','Voici un super parragraphe.');
 echo html('div', html('p','Un truc dans un div'));
 
+
 make_html_end();

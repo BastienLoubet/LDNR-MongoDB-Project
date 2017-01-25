@@ -34,3 +34,12 @@ make_html_start('Edition');
 make_nav_bar();
 
 make_html_end();
+//Les lignes suivante ne test que si la session a ete cree et pas si les identifiants ont ete verifier sur la base de donnees
+	/*test si la personne est connecté ou non (false si elle n'est pas connecté)*/
+//	if(isset( $_SESSION["sessid"]) == true)
+//			{
+				/*instrcution si la personne est connecté*/
+//			}
+//			else 
+				/*si la personne n'est pas authentifié, on la redirige gentiement vers la page d'accueil*/
+//			header("Location: accueil.php");

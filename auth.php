@@ -18,12 +18,12 @@ require_once('./php/basic_functions.php');
 make_html_start('Authentification','./css/auth.css');
 
 make_nav_bar();
-
+echo '<img src="./img/newlog1.png" alt="carte" class="cart">';
 $identifiant = "";//variable recevant l'identifiant s'il est deja défini dans la variable $_POST.
 
 //Le code HTML permettant de générer le formulaire de connexion
 echo '<div class="recherche">'."\n";
-echo '<form method=POST action="./verif.php">'."\n";
+echo '<form method=POST action="">'."\n";
 echo '<fieldset class="fieldset">'."\n";
 echo '<legend>Authentifiez-vous</legend>'."\n";
 echo '<div class=auth_champs>'."\n";
@@ -42,6 +42,5 @@ echo '</div>'."\n";
 echo '</fieldset>'."\n";
 echo '</form>'."\n";
 echo '</div>'."\n";
-
 
 make_html_end();

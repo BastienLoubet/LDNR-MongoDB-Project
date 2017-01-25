@@ -22,7 +22,11 @@ require_once('./php/basic_functions.php');
 
 if (empty($_POST["identifiant"]) || empty($_POST["mot_de_passe"])){ 
 
-    /*Renvoyer utilisateur vers auth.php*/
+    /*Renvoyer utilisateur vers auth.php*/ 
+	/*selon la doc php.net: Le deuxième type d'appel spécial est "Location:". 
+	Non seulement il renvoie un en-tête au client, mais, en plus, il envoie un statut REDIRECT (302) au navigateur 
+	tant qu'un code statut 201 ou 3xx n'a pas été envoyé.*/
+	header("Location: auth.php");
 }
 else {
     $cResult = my_query(["id"=> $_POST["identifiant"], "mdp"=> $_POST["mot_de_passe"]], [], $mongo);
@@ -30,7 +34,10 @@ else {
     
     if ($_POST["identifiant"] == $identifiant && $_POST["mot_de_passe"] ==$mot_de_passe) {
         echo "Connexion";
+		/*initialisation de la variable de session "sessid" qui correspondra au nom de sssion et qui prendra la valeur de $identifiant*/
+		$_SESSION["sessid"]=$identifiant;
         /*Renvoyer utilisateur vers maint.php*/
+		header("Location: maint.php");
     }
         else {
             echo "Erreur connexion";
