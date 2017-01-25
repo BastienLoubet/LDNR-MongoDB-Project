@@ -12,21 +12,7 @@ les utilisateurs non authentifiés seront redirigés vers la page d'accueil par 
 */
 
 require_once('./php/basic_functions.php');
-require_once('./php/constants.php');
-
-session_start();
-
-//Si l'utilisateur n'est pas passer par verif.php cette variable n'est pas initialise
-if(!isset($_SESSION['connect'])){
-    header("Location: ./auth.php");
-    exit();
-}
-
-//On verifie que l'utilisateur ne c'est pas connecte depuis trop longtemps
-if(time() - $_SESSION('last_connect') < sessionTime ){
-    header("Location: ./deconnect.php");
-    exit();
-}
+require_once('./php/test_connect.php');
 
 
 make_html_start('Edition');
@@ -47,9 +33,16 @@ echo '<h1>';
 echo 'Entrez le nom de la ville';
 echo '</h1>';
 echo '<form method="get" action="./replace.php">';
+echo "<p>Villes a changer</p>/n";
 InputGenerator ("villes" , "Villes");
 InputGenerator ("dept" , "Département");
 InputGenerator ("region" , "Régions");
+echo "<p> entree a modifier </p>/n";
+InputGenerator ("cp" , "Code postal");
+InputGenerator ("pop" , "Population");
+if($_SESSION['connect']=='admin'){
+    
+}
 echo '<input class="submit" type="submit" name="maint" value=Remplacer>';
 echo '</form>';
 echo '</div>';
