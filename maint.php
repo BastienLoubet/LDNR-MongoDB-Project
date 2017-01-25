@@ -13,6 +13,7 @@ les utilisateurs non authentifiés seront redirigés vers la page d'accueil par 
 */
 <?php 
 	/*test si la personne est connecté ou non (false si elle n'est pas connecté)*/
+	if(isset( $_SESSION["sessid"]) == true)
 			{
 				/*instrcution si la personne est connecté*/
 			}
