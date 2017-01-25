@@ -11,3 +11,12 @@ de modifier tous les paramètres permis par l'application (on rajoute le nom des
 afin de simplifier l'opération de migration des régions en cours sur notre territoire national on pourrait aussi permettre à l'application d'effectuer la fusion de plusieurs régions par sélection de celles-ci via des check-box.
 les utilisateurs non authentifiés seront redirigés vers la page d'accueil par une directive HTTP 303 (voir les redirections sur fr.wikipedia.org/wiki/Liste_des_codes_HTTP ainsi que la technique de redirection depuis PHP sur php.net/manual/fr/function.header.php
 */
+<?php 
+	/*test si la personne est connecté ou non (false si elle n'est pas connecté)*/
+			{
+				/*instrcution si la personne est connecté*/
+			}
+			else 
+				/*si la personne n'est pas authentifié, on la redirige gentiement vers la page d'accueil*/
+			header("Location: accueil.php");
+		
