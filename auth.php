@@ -43,29 +43,4 @@ echo '</fieldset>'."\n";
 echo '</form>'."\n";
 echo '</div>'."\n";
 
-
-echo '<div class="connexion">';
-echo '<form method=POST action="./verif.php">';
-echo '<fieldset>';
-echo '<legend>Authentifiez-vous</legend>';
-echo '<input type="text" name="identifiant" value=""';
-echo '<input type="password" name="mot_de_passe" value=""';
-echo '<input type="submit" name="Connexion" value="Connexion"';
-echo '</fieldset>';
-echo '</form>';
-echo '</div>';
-
-echo '<div class="inscription">';
-echo '<form method=POST action="">';
-echo '<fieldset>';
-echo '<legend>Inscrivez-vous</legend>';
-echo '<input type="text" name="identifiant" value=""';
-echo '<input type="password" name="mot_de_passe" value=""';
-echo '<input type="submit" name="Inscription" value="Inscription"';
-echo '</fieldset>';
-echo '</form>';
-echo '</div>';
-
-
-
 make_html_end();
