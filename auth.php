@@ -13,7 +13,6 @@ les utilisateurs non authentifiés seront redirigés vers la page d'accueil par 
 require_once('./php/basic_functions.php');
 //Avant d'envoyer le premier header http
 
-
 //On cree le html
 make_html_start('Authentification','./css/auth.css');
 
