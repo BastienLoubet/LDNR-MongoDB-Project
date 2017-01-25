@@ -34,10 +34,11 @@ else {
     
     if ($_POST["identifiant"] == $identifiant && $_POST["mot_de_passe"] ==$mot_de_passe) {
         echo "Connexion";
-		/*initialisation de la variable de session "sessid" qui correspondra au nom de sssion et qui prendra la valeur de $identifiant*/
-		$_SESSION["sessid"]=$identifiant;
+		session_start()
+		$_SESSION['connect']=$profil;
+		$_SESSION('last_connect')=time();
         /*Renvoyer utilisateur vers maint.php*/
-		header("Location: maint.php");
+		header("Location: ./maint.php");
     }
         else {
             echo "Erreur connexion";
