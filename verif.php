@@ -28,7 +28,7 @@ if (empty($_POST["identifiant"]) || empty($_POST["mot_de_passe"])){
 	/*selon la doc php.net: Le deuxième type d'appel spécial est "Location:". 
 	Non seulement il renvoie un en-tête au client, mais, en plus, il envoie un statut REDIRECT (302) au navigateur 
 	tant qu'un code statut 201 ou 3xx n'a pas été envoyé.*/
-	//header("Location: ./auth.php");
+	header("Location: ./auth.php");
     
 }
 else {
@@ -38,8 +38,6 @@ else {
 
 
     if (!empty($tabResult)) {
-    //if ($_POST["identifiant"] == $identifiant && $_POST["mot_de_passe"] ==$mot_de_passe) {
-        //echo "Connexion";
 		session_start();
         $_SESSION['connect']=$tabResult[0]->profil;
         $_SESSION['last_connect']=time();
