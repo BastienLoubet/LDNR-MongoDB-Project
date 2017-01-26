@@ -7,12 +7,23 @@ legend {
     padding-right: 2%;
 }
 
+.inputclass {
+    border-radius: 10px;
+    width: 55%;
+    height: 3em;
+    padding-left: 1%;
+}
+
 .logo {
     padding-top: 3%;
     padding-left: 2%;
     display: flex;
     flex: left;
     position: absolute;
+}
+
+.error {
+    color: red;
 }
 
 .auth_champs {

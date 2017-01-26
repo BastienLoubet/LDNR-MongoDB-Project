@@ -26,23 +26,24 @@ echo '<form method=POST action="./verif.php">'."\n";
 echo '<fieldset class="fieldset">'."\n";
 echo '<legend>Authentifiez-vous</legend>'."\n";
 echo '<div class=auth_champs>'."\n";
-echo '<label for="identifiant">identifiant</label>';
+echo '<label for="identifiant">Identifiant</label>';
 if(!empty($_POST['identifiant'])) //si l'identifiant existe deja on rempli le champs idoine avec la valeur.'
 {
     $identifiant = $_POST['identifiant'];
 }
-echo '<input type="text" name="identifiant" value="'.$identifiant.'"/>'."\n";
+echo '<input type="text" class"inputclass" name="identifiant" value="'.$identifiant.'"/>'."\n";
 echo '<label for="mot_de_passe">Mot de passe</label>';
 echo '<input type="password" name="mot_de_passe" value=""/>'."\n";
-echo '</div>'."\n";
-echo '<div class="auth_submit_zone">'."\n";
-echo '<input class="submit auth__auth_submit" type="submit" name="Connexion" value="Connexion"/>'."\n";
-echo '</div>'."\n";
 if(isset($_GET["Erreur"])) {
 echo '<div class="error">';
 echo $_GET["Erreur"];
 echo '</div>';
 }
+echo '</div>'."\n";
+echo '<div class="auth_submit_zone">'."\n";
+echo '<input class="submit auth__auth_submit" type="submit" name="Connexion" value="Connexion"/>'."\n";
+echo '</div>'."\n";
+
 echo '</fieldset>'."\n";
 echo '</form>'."\n";
 echo '</div>'."\n";
