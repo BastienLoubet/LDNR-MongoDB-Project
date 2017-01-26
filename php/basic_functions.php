@@ -73,7 +73,7 @@ function InputGenerator ($name="nom",$plholder="placeholder",$options='') {
     if(isset($_GET[$name])){
         $setValue = "value='".htmlspecialchars($_GET[$name])."'";
     }else {$setValue='';}
-    echo "<div><input type='text' class='rechrch' name=$name placeholder=$plholder $setValue $options></div>";
+    echo "<div><input type='text' class='rechrch' name=$name placeholder='$plholder' $setValue $options></div>";
 }
 
 //Input generator avec autocompletion

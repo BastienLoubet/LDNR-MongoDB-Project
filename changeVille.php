@@ -13,6 +13,10 @@ if( (!isset($_GET['ville'])) || $_GET['ville']=='' ){
     redirect_error('maint.php','Veuillez preciser la ville.','changeVilleErreur');
 }
 
+redirect_error('maint.php','Pas encore implémenté.','changeVilleErreur');
+exit();
+
+
 try{
     // les paramètres de connexion
     $dsn='mongodb://localhost:27017';
