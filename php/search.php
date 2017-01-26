@@ -8,6 +8,10 @@ header('Content-type: text/plain');
 //ligne de debug
 //if(!isset($_POST['search'])) $_POST['search']='A';
 if (isset($_POST['search']) && isset($_POST['collection'])){
+    if($_POST['search']==''){
+        echo '';
+        exit();
+    }
     try{
         // les paramètres de connexion
         $dsn='mongodb://localhost:27017';
