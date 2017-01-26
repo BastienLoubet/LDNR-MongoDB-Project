@@ -6,7 +6,7 @@ require_once('./php/constants.php');
 
 session_start();
 
-//Si l'utilisateur n'est pas passer par verif.php cette variable n'est pas initialise
+//Si l'utilisateur n'est pas passe par verif.php cette variable n'est pas initialise
 if(!isset($_SESSION['connect'])){
     header("Location: ./auth.php");
     exit();
