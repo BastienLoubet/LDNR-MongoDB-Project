@@ -33,7 +33,7 @@ if(!empty($_POST['identifiant'])) //si l'identifiant existe deja on rempli le ch
 }
 echo '<input type="text" id="identifiant" class="inputclass" name="identifiant" value="'.$identifiant.'"/>'."\n";
 echo '<label for="pwd">Mot de passe</label>';
-echo '<input id="pwd" type="password" name="mot_de_passe" value=""/>'."\n";
+echo '<input id="pwd" type="password" class="inputclass" name="mot_de_passe" value=""/>'."\n";
 if(isset($_GET["Erreur"])) {
 echo '<div class="error">';
 echo $_GET["Erreur"];

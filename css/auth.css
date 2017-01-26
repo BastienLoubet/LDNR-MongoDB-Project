@@ -9,8 +9,8 @@ legend {
 
 .inputclass {
     border-radius: 10px;
-    width: 55%;
-    height: 3em;
+    width: 35%;
+    height: 2em;
     padding-left: 1%;
 }
 
@@ -31,9 +31,9 @@ legend {
 }
 
 .recherche {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3%;
+    padding-top: 3%;
+    padding-right: 10%;
+    padding-left: 20%;
 }
 
 .auth_submit_zone {
