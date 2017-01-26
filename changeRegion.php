@@ -3,7 +3,7 @@
 recoit les donnees de maint.php pour faire les remplacements.
 recoit $_GET['regionToChange'] pour identifier la region
 recoit $_GET['newRegionName'] pour changer le nom de la region
-
+url de test: http://localhost/LDNR-MongoDB-Project/changeRegion.php?regionToChange=Bretagne&newRegionName=Bretagnes
 
 */
 require_once('./php/basic_functions.php');
@@ -26,18 +26,21 @@ try{
 	$regionToChange = $_GET['regionToChange'];
 	$newRegionName = $_GET['newRegionName'];
 	$listRegion = my_query(['nom' => $regionToChange],[], $mongo,'geo_france.regions');
-	 $Region=$listRegion->toArray()[0];
-     $result = count($Region);
+	 $aRegion=$listRegion->toArray();
+     $result = count($aRegion);
 	 if($result == 1)
 	 {
-		  $bulk = new MongoDB\Driver\BulkWrite();
-		  $bulk->update(['nom' => $newRegionName]);
-           // envoi dans base de données
-		  $result = $mgc->executeBulkWrite('geo_france'.'.'.'regions', $bulk);
+		 $command = new MongoDB\Driver\Command([
+					   'update' => 'regions',
+					   'updates' => [['q'=> ['nom'=>$regionToChange],
+                       'u'=>['$set'=>['nom'=>$newRegionName]],
+                       'multi'=> true ]]  
+					 ]);
+		$cursor = $mongo->executeCommand('geo_france', $command);
 	 }
 	 else
 	 {
-		 echo"Erreur!!! Le nom de région ne c'est pas mis à jour";
+		redirect_error('maint.php',"Erreur!!! La région que vous essayé de modifier n'éxiste pas!!!",'changeRegionErreur');
 	 }
 }catch(Exception $e){
     redirect_error('maint.php',$e->getMessage(),'changeRegionErreur');
