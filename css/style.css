@@ -130,11 +130,15 @@ fieldset {
 .results {
     z-index: 1;
     position: absolute;
-    border-radius: 20px;
+    border: 1px solid lightgrey;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
 }
 
 #results div {
-    background-color: #fff;
     border: 0 none;
     padding: 2px 4px;
     text-align: left;

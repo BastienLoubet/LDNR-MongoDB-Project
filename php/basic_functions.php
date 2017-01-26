@@ -64,6 +64,13 @@ function InputGenerator ($name="nom",$plholder="placeholder",$options='') {
     echo "<input type='text' class='rechrch' name=$name placeholder=$plholder $setValue $options><br>";
 }
 
+//Input generator avec autocompletion
+function InputGeneratorAutocomplete(string $inputId,string $placeholder,string $divResultId,string $collectionName){
+    InputGenerator ($inputId , $placeholder,"id='$inputId' autocomplete='off'");
+    echo "<div id='$divResultId' class='results'></div>";
+    echo "<script src='./php/autocompletion.php?inputId=$inputId&collectionName=$collectionName&divResultId=$divResultId'></script>";
+}
+
 //fonction d'erreur avec redirection et renvoi des parametres passe en get
 function redirect_error(string $url,string $message,string $errorname='error'){
     header("Location: ./$url?".http_build_query($_GET)."&$errorname=".urlencode($message));
