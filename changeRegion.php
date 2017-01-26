@@ -19,7 +19,7 @@ try{
     // création de l'instance de connexion
     $mongo = new MongoDB\Driver\Manager($dsn);
     
-}(Exception $e){
+}catch(Exception $e){
     redirect_error('maint.php',$e->getMessage(),'changeRegionErreur');
     exit();
 }
