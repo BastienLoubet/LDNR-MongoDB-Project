@@ -16,10 +16,8 @@ echo '<img src="./img/newlog1.png" alt="carte" class="cart">';
 echo '</div>';
 echo '<div class="recherche">';
 echo '<fieldset>';
+echo '<legend>Rechercher une ville</legend>'."\n";
 echo '<div class="rech">';
-echo '<h1>';
-echo 'Cherchez une ville';
-echo '</h1>';
 echo '<form method="get" action="./select.php">';
 
 /*InputGenerator ("villes" , "Villes","id='villes' autocomplete='off'");
