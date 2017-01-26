@@ -14,7 +14,7 @@ function afficheparam(string $arg, string $label){
       
       echo"<div class='affichage'>";
       echo "<span class='label'> $label</span>\n";
-	  echo "<span class='res'> $arg</span>\n";
+	  echo "<span class='res'> &nbsp;$arg&nbsp;</span>\n";
       echo"</div>";
 }  
     
@@ -23,13 +23,13 @@ make_nav_bar();
 
 $cp=[];
 
-$atab=[[$_GET['nomVille'],'Nom:'],
-       [$_GET['nomDept'].' ('.$_GET['codeDept'].')','Département:'],
-       [$_GET['nomRegion'],'Region:'],
-       [$_GET['cp'],'code postal:'],
-       [$_GET['lat'],'lattitude:'],
-       [$_GET['lon'],'longitude:'],
-       [$_GET['pop'],'population:']];
+$atab=[[$_GET['nomVille'],'Nom'],
+       [$_GET['nomDept'].' ('.$_GET['codeDept'].')','Département'],
+       [$_GET['nomRegion'],'Region'],
+       [$_GET['cp'],'Code postal'],
+       [$_GET['lat'],'Lattitude'],
+       [$_GET['lon'],'Longitude'],
+       [$_GET['pop'],'Population']];
 echo '<img src="./img/newlog1.png" alt="carte" class="logo">';
 echo '<div class="recherche">';
 echo"<div class='param'>";

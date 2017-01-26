@@ -72,7 +72,6 @@ fieldset {
     background: linear-gradient( #022841, #479cd3, #479cd3);
     border-color: #44aed1;
     border-radius: 20px;
-    border-style: 1px;
 }
 
 .rechrch {
@@ -103,7 +102,7 @@ ul.topnav {
     border-radius: 20px;
     color: #DDD;
     background: #444;
-    background: linear-gradient(#2c2c2c, #479cd3, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #479cd3, #2c2c2c);
+    background: linear-gradient(#2c2c2c, #479cd3, lightblue, #479cd3, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #479cd3, lightblue, #479cd3, #2c2c2c);
     border-radius: 0.5em;
     border-color: #444;
 }

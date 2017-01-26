@@ -1,12 +1,18 @@
 span {
-    margin-top: 0.5em;
-    font-size: 1.5em;
-    color: orange;
+    margin-top: 2%;
+    font-size: 150%;
+}
+
+.res {
+    border: 1px solid #479cd3;
+    border-radius: 10px;
+    background: lightblue;
+    color: black;
 }
 
 .label {
     color: white;
-    margin-right: 0.5em;
+    margin-right: 3%;
 }
 
 .affichage {
