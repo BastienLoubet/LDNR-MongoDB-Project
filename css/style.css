@@ -95,7 +95,7 @@ ul.topnav {
     border-radius: 20px;
     color: #DDD;
     background: #444;
-    background: linear-gradient(#2c2c2c, #479cd3, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #555, #479cd3, #2c2c2c);
+    background: linear-gradient(#2c2c2c, #479cd3, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #479cd3, #2c2c2c);
     border-radius: 0.5em;
     border-color: #444;
 }
