@@ -1,8 +1,8 @@
 <?php
 /*
 recoit les donnees de maint.php pour faire les remplacements.
-recoit $_GET['deptToChange'] pour identifier la region
-recoit $_GET['newDeptRegionName'] pour changer le nom de la region
+recoit $_GET['deptToChange'] pour identifier le departement
+recoit $_GET['newDeptRegionName'] pour changer la region du departement departement
 */
 
 require_once('./php/basic_functions.php');

@@ -16,7 +16,7 @@
             text = (document.getElementById('search')).value;
 
         xhr.abort();
-        xhr.open('POST', 'http://cam.ldnr.fr/~sebastienloubet/ajax/TP_10_11/search.php');
+        xhr.open('POST', './php/search.php');
         //xhr.open('POST', 'http://cam.ldnr.fr/~sebastienloubet/ajax/TP_10_11/pagetest.php');
         data.append('search', text);
         xhr.send(data);

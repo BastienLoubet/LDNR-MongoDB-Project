@@ -21,7 +21,7 @@ echo '<h1>';
 echo 'Entrez le nom de la ville';
 echo '</h1>';
 echo '<form method="get" action="./select.php">';
-InputGenerator ("villes" , "Villes","id=\"search\"");
+InputGenerator ("villes" , "Villes","id='search'");
 echo '<div id="results"></div>';
 InputGenerator ("dept" , "Département");
 InputGenerator ("region" , "Régions");
