@@ -23,6 +23,7 @@ span {
 }
 
 .param {
+    padding-top: 2%;
     background: linear-gradient( #022841, #479cd3, #479cd3);
     border-radius: 20px;
     border: 1px solid #44aed1;
