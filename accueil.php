@@ -28,13 +28,12 @@ InputGenerator ("villes" , "Villes");
 InputGenerator ("dept" , "Département");
 InputGenerator ("region" , "Régions");
 echo '<input class="submit" type="submit" name="accueil" value=Rechercher>';
+if(isset($_GET['erreur'])){
+    error($_GET['erreur']);
+}
 echo '</form>';
 echo '</div>';
 echo '</fieldset>';
 echo '</div>';
-
-if(isset($_GET['erreur'])){
-    error($_GET['erreur']);
-}
 
 make_html_end();
