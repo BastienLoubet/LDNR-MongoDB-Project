@@ -1,8 +1,10 @@
+<?php
+header('Content-Type: text/javascript; charset=ton_charset');
+?>
 (function () {
     'use strict';
-    var inputId = 'searchDept';
-    var collectionName='departements';
-    var divResultId='resultsDept';
+    var p1 = <?php echo $_GET['p1']; ?>;
+    var p2 = <?php echo $_GET['p2']; ?>;
 
     function add_error_check(xhr) { // some error checks
         myxhr.addEventListener('load', function () {
@@ -16,13 +18,12 @@
 
     function send_request(xhr) { // will send and handle the xhr request notably always abort it before sending a new
         var data = new FormData(),
-            text = (document.getElementById(inputId)).value;
+            text = (document.getElementById('search')).value;
 
         xhr.abort();
         xhr.open('POST', './php/search.php');
         //xhr.open('POST', 'http://cam.ldnr.fr/~sebastienloubet/ajax/TP_10_11/pagetest.php');
         data.append('search', text);
-        data.append('collection', collectionName);
         xhr.send(data);
     }
 
@@ -46,7 +47,7 @@
 
     function handle_key_up_down(keytext) { // handle the up down plot on the div. return true if a div was selected
         //console.log('And I detected it !');
-        var res = document.getElementById(divResultId),
+        var res = document.getElementById('results'),
             size = res.children.length;
         if (size < 1) return false;
         if (size == 1) {
@@ -82,7 +83,7 @@
     function do_selection() { //return true if a selection have been copied to the textbox of the search field
         var selected = get_selected();
         if (selected == null) return false; //if there are no selection we abort else we copy the selected text in the box then we empty the list
-        (document.getElementById(inputId)).value = selected.firstChild.textContent;
+        (document.getElementById('search')).value = selected.firstChild.textContent;
         refresh_list('');
         return true;
     }
@@ -105,7 +106,7 @@
 
     function refresh_list(xhrtext) { //handle the return string and refresh the list of the div
         var tab = xhrtext.split('|'), //split the return div
-            ndiv, div = document.getElementById(divResultId),
+            ndiv, div = document.getElementById('results'),
             index = 0;
         while (div.firstChild !== null) div.removeChild(div.firstChild); //remove all childs
         for (var i = 0; i < tab.length; i++) { //fill the div with new divs if tab[i] is different from the null chain
@@ -124,7 +125,7 @@
     }
 
     function add_listeners(xhr) {
-        (document.getElementById(inputId)).addEventListener('keyup', function (e) {
+        (document.getElementById('search')).addEventListener('keyup', function (e) {
             handle_keypress(e, xhr);
         })
         xhr.addEventListener('load', function (e) {

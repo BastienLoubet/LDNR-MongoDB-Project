@@ -21,10 +21,12 @@ echo '<h1>';
 echo 'Cherchez une ville';
 echo '</h1>';
 echo '<form method="get" action="./select.php">';
-InputGenerator ("villes" , "&nbsp;Villes","id='search' autocomplete='off'");
-echo '<div id="results"></div>';
-InputGenerator ("dept" , "&nbsp;Département");
-InputGenerator ("region" , "&nbsp;Régions");
+
+InputGenerator ("villes" , "Villes","id='search' autocomplete='off'");
+echo '<div id="results" class="results"></div>';
+InputGenerator ("dept" , "Département","id='searchDept' autocomplete='off'");
+echo '<div id="resultsDept" class="results"></div>';
+InputGenerator ("region" , "Régions");
 echo '<input class="submit" type="submit" name="accueil" value=Rechercher>';
 if(isset($_GET['erreur'])){
     error($_GET['erreur']);
