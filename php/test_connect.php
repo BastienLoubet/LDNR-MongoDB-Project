@@ -13,7 +13,7 @@ if(!isset($_SESSION['connect'])){
 }
 
 //On verifie que l'utilisateur ne c'est pas connecte depuis trop longtemps
-if(time() - $_SESSION('last_connect') < sessionTime ){
+if(time() - $_SESSION['last_connect'] < sessionTime ){
     header("Location: ./deconnect.php");
     exit();
 }else {
