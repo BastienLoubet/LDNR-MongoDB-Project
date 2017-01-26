@@ -19,6 +19,7 @@ try{
     // création de l'instance de connexion
     $mongo = new MongoDB\Driver\Manager($dsn);
     
+    
 }catch(Exception $e){
     redirect_error('maint.php',$e->getMessage(),'changeVilleErreur');
     exit();

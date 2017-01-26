@@ -4,8 +4,8 @@
 
 */
 require_once('./basic_functions.php');
-//header('Content-type: text/plain');
-if (!isset($_POST['search'])) $_POST['search']='A';
+header('Content-type: text/plain');
+
 if (isset($_POST['search'])){
     try{
         // les paramètres de connexion
@@ -16,19 +16,15 @@ if (isset($_POST['search'])){
         $aRes=[];
         $i=0;
         $command = new MongoDB\Driver\Command([
-            'find' => 'utilisateurs',
+            'find' => 'villes',
             'filter' => ['nom' => new MongoDB\BSON\Regex("^$name",'i')],
             'limit'=> 5
     ]);
         $cVilles= $mongo->executeCommand('geo_france', $command);
-        make_html_start('test');
-        bprint_r($cVilles);
         foreach($cVilles as $dVille){
             $aRes[$i]=$dVille->nom;
-            bprint_r($dVille);
             $i++;            
         }
-        make_html_end();
         echo implode('|',$aRes);
     
     }catch(Exception $e){
