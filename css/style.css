@@ -149,6 +149,10 @@ fieldset {
 
 .resultFocus {
     background-color: #ddd !important;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    border-radius: 5px;
+    width: 220px;
 }
 
 div #selected {
