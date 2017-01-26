@@ -6,7 +6,6 @@ require_once('./php/basic_functions.php');
 
 
 
-
 //On cree le html
 make_html_start('Template','./css/affichage.css');
 function afficheparam(string $arg, string $label){
