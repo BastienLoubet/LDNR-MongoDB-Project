@@ -22,7 +22,7 @@ $identifiant = "";//variable recevant l'identifiant s'il est deja défini dans l
 
 //Le code HTML permettant de générer le formulaire de connexion
 echo '<div class="recherche">'."\n";
-echo '<form method=POST action="">'."\n";
+echo '<form method=POST action="./verif.php">'."\n";
 echo '<fieldset class="fieldset">'."\n";
 echo '<legend>Authentifiez-vous</legend>'."\n";
 echo '<div class=auth_champs>'."\n";
