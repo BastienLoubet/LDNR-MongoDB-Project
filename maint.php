@@ -30,32 +30,50 @@ echo '<div class="recherche">';
 echo '<fieldset>';
 echo '<div class="rech">';
 echo '<h1>';
-echo 'Entrez le nom de la ville';
+echo 'Formulaire de maintenance';
 echo '</h1>';
-echo '<form method="get" action="./replace.php">';
-echo "<p>Ville a changer</p>/n";
-InputGenerator ("villes" , "Villes");
+echo '<form method="get" action="./changeVille.php">';
+echo "<p>Ville a changer</p>\n";
+InputGenerator ("ville" , "Ville");
 InputGenerator ("dept" , "Département");
 InputGenerator ("region" , "Régions");
-echo "<p> entree a modifier </p>/n";
+echo "<p> entree a modifier </p>\n";
 InputGenerator ("cp" , "Code postal");
 InputGenerator ("pop" , "Population");
-if($_SESSION['connect']=='admin'){
-    echo "<p>Region a changer</p>/n";
-    InputGenerator ("regionChange" , "Region");
-    echo "<p> entree a modifier </p>/n";
-    InputGenerator ("cp" , "Code postal");
-    InputGenerator ("pop" , "Population");
-}
+
 echo '<input class="submit" type="submit" name="maint" value=Remplacer>';
 echo '</form>';
+
+
+if($_SESSION['connect']=='admin'){
+    echo '<form method="get" action="./changeRegion.php">';
+    echo "<p>Région à changer</p>\n";
+    InputGenerator ("regionToChange" , "Region");
+    echo "<p> entrée à modifier </p>\n";
+    InputGenerator ("newRegionName" , "Nouveau nom");
+    echo '<input class="submit" type="submit" name="maint" value=Remplacer>';
+        if(isset($_GET['changeRegionError'])){
+            error($_GET['changeRegionError']);
+        }
+    echo '</form>';
+}
+
+if($_SESSION['connect']=='admin'){
+    echo '<form method="get" action="./changeDept.php">';
+    echo "<p>Département à changer</p>\n";
+    InputGenerator ("deptToChange" , "Region");
+    echo "<p> entrée à modifier </p>\n";
+    InputGenerator ("newDeptRegionName" , "Nouvelle region");
+    echo '<input class="submit" type="submit" name="maint" value=Remplacer>';
+    if(isset($_GET['changeDeptError'])){
+        error($_GET['changeDeptError']);
+    }
+    echo '</form>';
+}
+
 echo '</div>';
 echo '</fieldset>';
 echo '</div>';
-
-if(isset($_GET['erreur'])){
-    error($_GET['erreur']);
-}
 
 make_html_end();
 //Les lignes suivante ne test que si la session a ete cree et pas si les identifiants ont ete verifier sur la base de donnees
