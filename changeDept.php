@@ -14,6 +14,7 @@ if( (!isset($_GET['deptToChange'])) || $_GET['deptToChange']=='' ){
 function my_query($filter, $option, $mongo,$dbs='geo_france.regions'){
     $query = new MongoDB\Driver\Query($filter,$option);
     return $mongo->executeQuery($dbs,$query);
+}
 try{
     // les paramètres de connexion
     $dsn='mongodb://localhost:27017';
