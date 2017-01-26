@@ -41,5 +41,9 @@ echo '</div>'."\n";
 echo '</fieldset>'."\n";
 echo '</form>'."\n";
 echo '</div>'."\n";
-
+if(isset($_GET["Erreur"])) {
+echo '<div class="error">';
+echo $_GET["Erreur"];
+echo '</div>';
+}
 make_html_end();

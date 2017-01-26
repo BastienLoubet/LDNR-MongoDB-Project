@@ -17,10 +17,10 @@ function my_command($aCommand,$mongo,$dbName='geo_france'){
     $dsn='mongodb://localhost:27017';
     // création de l'instance de connexion
     $mongo = new MongoDB\Driver\Manager($dsn);
-    //Si la requete vient de la page accueil.php
+
 
 require_once('./php/basic_functions.php');
-make_html_start('Verification');
+
 
 if (empty($_POST["identifiant"]) || empty($_POST["mot_de_passe"])){ 
 
@@ -28,13 +28,12 @@ if (empty($_POST["identifiant"]) || empty($_POST["mot_de_passe"])){
 	/*selon la doc php.net: Le deuxième type d'appel spécial est "Location:". 
 	Non seulement il renvoie un en-tête au client, mais, en plus, il envoie un statut REDIRECT (302) au navigateur 
 	tant qu'un code statut 201 ou 3xx n'a pas été envoyé.*/
-	header("Location: ./auth.php");
+	header("Location: ./auth.php?".http_build_query(["Erreur"=>"Login ou mot de passe manquant"]));
     
 }
 else {
     $cResult = my_query(["id"=> $_POST["identifiant"], "mdp"=> $_POST["mot_de_passe"]], [], $mongo);
     $tabResult = $cResult-> toArray();
-    bprint_r($tabResult);
 
 
     if (!empty($tabResult)) {
@@ -46,9 +45,7 @@ else {
     }
         else {
             //echo "Erreur connexion";
-            echo 'mot de passe ou login manquant';
-            exit();
-            header("Location: ./auth.php");
+            header("Location: ./auth.php?".http_build_query(["Erreur"=>"Login ou mot de passe incorrect"]));
         }
 }
 ?>
