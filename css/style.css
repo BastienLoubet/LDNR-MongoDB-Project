@@ -8,11 +8,6 @@ body {
     background: linear-gradient( #022841, #479cd3) 0 0 fixed no-repeat;
 }
 
-.cart:hover {
-    transform: rotate(360deg);
-    transition: 0.8s ease-in;
-}
-
 .submit {
     font-size: 1.2em;
     width: auto;

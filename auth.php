@@ -24,7 +24,7 @@ $identifiant = "";//variable recevant l'identifiant s'il est deja défini dans l
 echo '<div class="recherche">'."\n";
 echo '<form method=POST action="">'."\n";
 echo '<fieldset class="fieldset">'."\n";
-echo '<legend>Authentifiez-vous</legend>'."\n";
+echo '<legend>&nbsp; Authentifiez-vous&nbsp; &nbsp;</legend>'."\n";
 echo '<div class=auth_champs>'."\n";
 echo '<label for="identifiant">identifiant</label>';
 if(!empty($_POST['identifiant'])) //si l'identifiant existe deja on rempli le champs idoine avec la valeur.'
