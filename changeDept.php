@@ -3,6 +3,7 @@
 recoit les donnees de maint.php pour faire les remplacements.
 recoit $_GET['deptToChange'] pour identifier le departement
 recoit $_GET['newDeptRegionName'] pour changer la region du departement departement
+ http://localhost/LDNR-MongoDB-Project/changeDept.php?deptToChange=Var&newDeptRegionName=Bretagnes
 */
 
 require_once('./php/basic_functions.php');
@@ -22,17 +23,25 @@ try{
     $mongo = new MongoDB\Driver\Manager($dsn);
 	$deptToChange = $_GET['deptToChange'];
 	$newDeptRegionName = $_GET['newDeptRegionName'];
-	$nomdept = my_query(['nom' => $deptToChange],[], $mongo,'geo_france.departements');
-	$idregion  = my_query(['nom' => $newDeptRegionName],['_id'=>1], $mongo,'geo_france.regions');
+	$cRegion  = my_query(['nom' => $newDeptRegionName],[], $mongo,'geo_france.regions');
+  
+	$idregion = $cRegion->toArray()[0]->_id;
+	
 	if(isset($idregion)){
 		
 		$command = new MongoDB\Driver\Command([
 					   'update' => 'departements',
-					   'updates' => [['q'=> ['_id_region'=>$deptToChange],
-                       'u'=>['$set'=>['_id_region'=>$newDeptRegionName]],
+					   'updates' => [['q'=> ['nom'=>$deptToChange],
+                       'u'=>['$set'=>['_id_region'=>$idregion]],
                        'multi'=> true ]]  
 					 ]);
 		$cursor = $mongo->executeCommand('geo_france', $command);
+		
+		 /* make_html_start('test');
+		  bprint_r($cursor);
+	      make_html_end();
+		  exit();*/
+		  redirect_error('maint.php',"Le département du $deptToChange est bien en $newDeptRegionName",'changeDeptErreur');
 	}
 	else
 	{
