@@ -16,4 +16,6 @@ if(!isset($_SESSION['connect'])){
 if(time() - $_SESSION('last_connect') < sessionTime ){
     header("Location: ./deconnect.php");
     exit();
+}else {
+    $_SESSION('last_connect') = time();
 }
