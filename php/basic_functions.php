@@ -33,6 +33,9 @@ function make_nav_bar(){
     echo '<li>';
     echo'<a href="accueil.php">Accueil</a>';
     echo '</li>';
+    echo '<li>';
+    echo'<a href="doc.php">Documentation</a>';
+    echo '</li>';
     if(session_status() == PHP_SESSION_ACTIVE){
         echo '<li>';
         echo'<a href="maint.php">Maintenance</a>';

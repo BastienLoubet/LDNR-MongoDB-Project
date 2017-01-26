@@ -6,7 +6,6 @@ body {
 /*-----Barre de navigation-----*/
 
 ul.topnav li a {
-    list-style-type: none;
     display: block;
     color: white;
     font-size: 200%;
@@ -22,6 +21,7 @@ li {
 }
 
 ul.topnav {
+    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
