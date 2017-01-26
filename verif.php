@@ -3,7 +3,7 @@
 verif.php Pour la connexion appelle par le fichiers. Créé le cookie et redirige vers maint.php ou redirige vers l’authentification.
 */
     
-    function my_query($filter, $option, $mongo,$dbs='geo_france.utilisateurs'){
+function my_query($filter, $option, $mongo,$dbs='geo_france.utilisateurs'){
     $query = new MongoDB\Driver\Query($filter,$option);
     return $mongo->executeQuery($dbs,$query);
 }
@@ -33,8 +33,7 @@ if (empty($_POST["identifiant"]) || empty($_POST["mot_de_passe"])){
 }
 else {
     $cResult = my_query(["id"=> $_POST["identifiant"], "mdp"=> $_POST["mot_de_passe"]], [], $mongo);
-    $tabResult = $cResult-> toArray();
-
+    $tabResult = $cResult->toArray();
 
     if (!empty($tabResult)) {
 		session_start();
