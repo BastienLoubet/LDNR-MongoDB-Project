@@ -9,7 +9,6 @@ legend {
 
 .inputclass {
     border-radius: 10px;
-    width: 35%;
     height: 2em;
     padding-left: 1%;
 }
@@ -24,7 +23,6 @@ legend {
 
 .error {
     color: red;
-    padding-left: 69%;
 }
 
 .recherche {
@@ -37,6 +35,7 @@ legend {
     display: flex;
     justify-content: flex-end;
     padding-right: 10%;
+    margin-top: 2%;
 }
 
 .auth_champs {
@@ -47,9 +46,11 @@ legend {
     padding-left: 20%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     margin-bottom: 3%;
+    flex-wrap: wrap;
 }
+
+.auth_infosCNX {}
 
 
 /* Les media queries */
@@ -74,6 +75,12 @@ legend {
     }
     .logo {
         display: none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .auth_champs {
+        flex-direction: column;
     }
 }
 

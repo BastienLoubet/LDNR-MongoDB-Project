@@ -19,29 +19,27 @@ make_html_start('Authentification','./css/auth.css');
 make_nav_bar();
 echo '<img src="./img/newlog1.png" alt="carte" class="logo">';
 $identifiant = "";//variable recevant l'identifiant s'il est deja défini dans la variable $_POST.
-
+if(!empty($_POST['identifiant'])) //si l'identifiant existe deja on rempli le champs idoine avec la valeur.'
+{
+    $identifiant = $_POST['identifiant'];
+}
 //Le code HTML permettant de générer le formulaire de connexion
 echo '<div class="recherche">'."\n";
 echo '<form method=POST action="./verif.php">'."\n";
 echo '<fieldset class="fieldset">'."\n";
 echo '<legend>Authentifiez-vous</legend>'."\n";
 echo '<div class=auth_champs>'."\n";
-echo '<label for="identifiant">Identifiant</label>';
-if(!empty($_POST['identifiant'])) //si l'identifiant existe deja on rempli le champs idoine avec la valeur.'
-{
-    $identifiant = $_POST['identifiant'];
-}
+echo '<label  for="identifiant">Identifiant</label>';
 echo '<input type="text" id="identifiant" class="inputclass" placeholder="Votre identifiant" name="identifiant" value="'.$identifiant.'"/>'."\n";
 echo '<label for="pwd">Mot de passe</label>';
 echo '<input id="pwd" type="password" class="inputclass" placeholder="Votre mot de passe" name="mot_de_passe" value=""/>'."\n";
-
-echo '</div>'."\n";
 if(isset($_GET["Erreur"])) {
 echo '<div class="error">';
 echo $_GET["Erreur"];
 echo '</div>';
 }
-echo '<br>';
+echo '</div>'."\n";
+
 echo '<div class="auth_submit_zone">'."\n";
 echo '<input class="submit auth__auth_submit" type="submit" name="Connexion" value="Connexion"/>'."\n";
 echo '</div>'."\n";
