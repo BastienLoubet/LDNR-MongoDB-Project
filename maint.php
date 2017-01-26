@@ -52,8 +52,8 @@ if($_SESSION['connect']=='admin'){
     echo "<p> entrée à modifier </p>\n";
     InputGenerator ("newRegionName" , "Nouveau nom");
     echo '<input class="submit" type="submit" name="maint" value=Remplacer>';
-    if(isset($_GET['changeRegionError'])){
-        error($_GET['changeRegionError']);
+    if(isset($_GET['changeRegionErreur'])){
+        error($_GET['changeRegionErreur']);
     }
     echo '</form>';
 }
@@ -65,8 +65,8 @@ if($_SESSION['connect']=='admin'){
     echo "<p> entrée à modifier </p>\n";
     InputGenerator ("newDeptRegionName" , "Nouvelle region");
     echo '<input class="submit" type="submit" name="maint" value=Remplacer>';
-    if(isset($_GET['changeDeptError'])){
-        error($_GET['changeDeptError']);
+    if(isset($_GET['changeDeptErreur'])){
+        error($_GET['changeDeptErreur']);
     }
     echo '</form>';
 }

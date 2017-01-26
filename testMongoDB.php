@@ -24,8 +24,14 @@ try{
                        'u'=>['$set'=>['mdp'=>'yeah']],
                       'multi'=> true ]]
     ]);
+    //$cursor = $mongo->executeCommand('geo_france', $command);
+    //bprint_r($cursor);
+    $command = new MongoDB\Driver\Command([ 
+        'find' => 'villes',
+        'filter' => ['nom' => new MongoDB\BSON\Regex ('^paris','i')]
+    ]);
     $cursor = $mongo->executeCommand('geo_france', $command);
-    bprint_r($cursor);
+    bprint_r($cursor->toArray());
     
 }catch(Exception $e){
     echo $e->getMessage();
