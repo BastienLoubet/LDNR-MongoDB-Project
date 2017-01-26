@@ -7,17 +7,18 @@ require_once('./basic_functions.php');
 header('Content-type: text/plain');
 //ligne de debug
 //if(!isset($_POST['search'])) $_POST['search']='A';
-if (isset($_POST['search'])){
+if (isset($_POST['search']) && isset($_POST['collection'])){
     try{
         // les paramètres de connexion
         $dsn='mongodb://localhost:27017';
         // création de l'instance de connexion
         $mongo = new MongoDB\Driver\Manager($dsn);
         $name=$_POST['search'];
+        $collection = $_POST['collection'];
         $aRes=[];
         $i=0;
         $command = new MongoDB\Driver\Command([
-            'distinct' => 'villes',
+            'distinct' => $collection,
             'key' => 'nom',
             'query' => ['nom' => new MongoDB\BSON\Regex("^$name",'i')]
         ]);
