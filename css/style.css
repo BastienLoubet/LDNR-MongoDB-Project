@@ -157,3 +157,37 @@ ul.topnav li a:hover:not(.active) {
         width: 100%;
     }
 }
+
+/* Pour l'autocompletion */
+#results {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff;
+    border-color: #aaa;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    display: none;
+    width: 228px;
+}
+
+#results div {
+    background-color: #fff;
+    border: 0 none;
+    padding: 2px 4px;
+    text-align: left;
+    width: 220px;
+    color:black;
+}
+
+.resultFocus {
+    background-color: #ddd !important;
+}
+
+div #selected {
+    /* added for the selected div, yes I know the .resultFocus class was done for that but I prefer to config mine */
+    background-color: blue;
+    color: white;
+}
