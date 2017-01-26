@@ -14,12 +14,6 @@ make_nav_bar();
 echo '<div class="logo">';
 echo '<img src="./img/newlog1.png" alt="carte" class="cart">';
 echo '</div>';
-function InputGenerator ($name="nom",$plholder="placeholder") {
-    if(isset($_GET[$name])){
-        $setValue = "value='".htmlspecialchars($_GET[$name])."'";
-    }else {$setValue='';}
-    echo "<input type='text' class='rechrch' name=$name placeholder=$plholder $setValue><br>";
-}
 echo '<div class="recherche">';
 echo '<fieldset>';
 echo '<div class="rech">';
