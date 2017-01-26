@@ -81,6 +81,7 @@ try{
         $region = get_var($_GET['region']);
         $bTest=true;
     }
+    //Si la requete vient de la page choix.php
     if(isset($_GET['choix'])){
         //On prend les parametres dont on a besoin
         $aVar = explode('_',$_GET['choix_ville']);
@@ -137,5 +138,6 @@ try{
     make_html_end();
 
 }catch (Exception $e){
-    echo "Exception intercepte: ".$e->getMessage();
+        header("Location: ./accueil.php?".http_build_query($_GET).'&erreur='.urlencode($e->getMessage()));
+        exit();
 }
