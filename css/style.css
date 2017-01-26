@@ -1,198 +1,229 @@
-   p.error {
-       color: red;
-       font-weight: bold;
-       text-align: center;
-   }
-   
-   body {
-       background: linear-gradient( #022841, #479cd3) 0 0 fixed no-repeat;
-   }
-   
-   #results {
-       z-index: 1;
-       position: absolute;
-       border-radius: 20px;
-   }
-   
-   .submit {
-       font-size: 1.2em;
-       width: auto;
-       height: 2em;
-       text-align: center;
-       color: #479cd3;
-       background: #444;
-       background: linear-gradient(#555, #2c2c2c);
-       border-radius: 0.5em;
-       border-color: #444;
-   }
-   
-   .recherche {
-       color: white;
-       z-index: 10;
-       padding-top: 3%;
-       padding-right: 10%;
-       padding-left: 20%;
-   }
-   
-   legend {
-       background-color: #2c2c2c;
-       border-radius: 10px;
-       color: lightblue;
-       border: 1px solid #44aed1;
-   }
-   
-   .logo {
-       padding-top: 3%;
-       padding-left: 2%;
-       display: flex;
-       flex: left;
-       position: absolute;
-   }
-   
-   .rech {
-       padding-top: 12%;
-       padding-right: 10%;
-       padding-left: 20%;
-       padding-bottom: 14%;
-       background-image: url("./france.png");
-       background-size: contain;
-       background-position: center;
-       background-repeat: no-repeat;
-   }
-   
-   .carte {
-       top: 10%;
-       padding: 2%;
-       width: 30%;
-       z-index: 10;
-       opacity: 0.2;
-   }
-   
-   fieldset {
-       background: linear-gradient( #022841, #479cd3, #479cd3);
-       border-color: #44aed1;
-       border-radius: 20px;
-   }
-   
-   .rechrch {
-       border-radius: 10px;
-       width: 55%;
-       height: 3em;
-   }
-   
-   ul.topnav li a {
-       display: block;
-       color: white;
-       font-size: 200%;
-       text-align: center;
-       padding: 5%;
-       text-decoration: none;
-       height: 1.5em;
-   }
-   
-   li {
-       width: 20em;
-   }
-   
-   ul.topnav {
-       list-style-type: none;
-       margin: 0;
-       padding: 0;
-       overflow: hidden;
-       border-radius: 20px;
-       color: #DDD;
-       background: #444;
-       background: linear-gradient(#2c2c2c, #479cd3, lightblue, #479cd3, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #479cd3, lightblue, #479cd3, #2c2c2c);
-       border-radius: 0.5em;
-       border-color: #444;
-   }
-   
-   ul.topnav li {
-       float: left;
-   }
-   
-   ul.topnav li a:hover:not(.active) {
-       color: #479cd3;
-       transition: 0.4s ease-in;
-   }
-   
-   @media screen and (max-width: 1100px) {
-       ul.topnav li {
-           float: center;
-       }
-       .recherche {
-           padding-top: 5%;
-           padding-right: 5%;
-           padding-left: 5%;
-       }
-       .rech {
-           padding-top: 10%;
-           padding-right: 10%;
-           padding-left: 5%;
-           padding-bottom: 10%;
-       }
-       .rechrch {
-           width: 70%;
-       }
-       .logo {
-           display: none;
-       }
-   }
-   
-   @media screen and (max-width: 600px) {
-       ul.topnav li {
-           float: inherit;
-           width: 1em;
-       }
-       .logo {
-           display: none;
-       }
-       .recherche {
-           padding-top: 10%;
-           padding-right: 1%;
-           padding-left: 1%;
-       }
-       .rech {
-           padding-top: 1%;
-           padding-right: 1%;
-           padding-left: 2%;
-           padding-bottom: 1%;
-       }
-       .rechrch {
-           width: 100%;
-       }
-   }
-   /* Pour l'autocompletion */
-   
-   #results {
-       -moz-border-bottom-colors: none;
-       -moz-border-left-colors: none;
-       -moz-border-right-colors: none;
-       -moz-border-top-colors: none;
-       background-color: #fff;
-       border-color: #aaa;
-       border-image: none;
-       border-style: solid;
-       border-width: 0 1px 1px;
-       display: none;
-       width: 228px;
-   }
-   
-   #results div {
-       background-color: #fff;
-       border: 0 none;
-       padding: 2px 4px;
-       text-align: left;
-       width: 220px;
-       color: black;
-   }
-   
-   .resultFocus {
-       background-color: #ddd !important;
-   }
-   
-   div #selected {
-       /* added for the selected div, yes I know the .resultFocus class was done for that but I prefer to config mine */
-       background-color: #479cd3;
-       color: white;
-   }
+body {
+    background: linear-gradient( #022841, #479cd3) 0 0 fixed no-repeat;
+}
+
+
+/*-----Barre de navigation-----*/
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    padding: 5%;
+    text-decoration: none;
+    height: 1.5em;
+}
+
+li {
+    width: 20%;
+    float: left;
+}
+
+ul.topnav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 0.5em;
+    background: linear-gradient(#2c2c2c, #479cd3, lightblue, #479cd3, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #2c2c2c, #479cd3, lightblue, #479cd3, #2c2c2c);
+}
+
+ul.topnav li a:hover:not(.active) {
+    color: #479cd3;
+    transition: 0.4s ease-in;
+}
+
+
+/*-----fin barre navigation----*/
+
+
+/* Logo du site */
+
+.logo {
+    padding-top: 3%;
+    padding-left: 2%;
+    display: flex;
+    flex: left;
+    position: absolute;
+}
+
+.carte {
+    top: 10%;
+    padding: 2%;
+    width: 30%;
+    z-index: 10;
+    opacity: 0.2;
+}
+
+
+/* DIV contenant le fieldset */
+
+.recherche {
+    color: white;
+    z-index: 10;
+    padding-top: 3%;
+    padding-right: 10%;
+    padding-left: 20%;
+}
+
+
+/*Style du fieldset*/
+
+legend {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    color: lightblue;
+    border: 1px solid #44aed1;
+}
+
+fieldset {
+    background: linear-gradient( #022841, #479cd3, #479cd3);
+    border-color: #44aed1;
+    border-radius: 20px;
+}
+
+
+/*-----------------*/
+
+
+/*Apparance a l'interieur du fieldset*/
+
+.rech {
+    padding-top: 12%;
+    padding-right: 10%;
+    padding-left: 20%;
+    padding-bottom: 14%;
+    background-image: url("./france.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*Div contenant les inputs de recherche des villes*/
+
+.rechrch {
+    border-radius: 10px;
+    width: 55%;
+    height: 3em;
+    padding-left: 1%;
+}
+
+
+/* Style du bouton Submit*/
+
+.submit {
+    font-size: 1.2em;
+    width: auto;
+    height: 2em;
+    text-align: center;
+    color: #479cd3;
+    background: #444;
+    background: linear-gradient(#555, #2c2c2c);
+    border-radius: 0.5em;
+    border-color: #444;
+}
+
+
+/* Div contenant la liste autocompletion */
+
+.results {
+    z-index: 1;
+    position: absolute;
+    border-radius: 20px;
+}
+
+#results div {
+    background-color: #fff;
+    border: 0 none;
+    padding: 2px 4px;
+    text-align: left;
+    width: 220px;
+    color: black;
+}
+
+.resultFocus {
+    background-color: #ddd !important;
+}
+
+div #selected {
+    /* added for the selected div, yes I know the .resultFocus class was done for that but I prefer to config mine */
+    background-color: #479cd3;
+    color: white;
+}
+
+
+/* FIN de la Div contenant la liste autocompletion */
+
+p.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Les media queries */
+
+@media screen and (max-width: 1100px) {
+    ul.topnav li {
+        float: center;
+    }
+    .recherche {
+        padding-top: 5%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    .rech {
+        padding-top: 10%;
+        padding-right: 10%;
+        padding-left: 5%;
+        padding-bottom: 10%;
+    }
+    .rechrch {
+        width: 70%;
+    }
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li {
+        float: inherit;
+        width: 1em;
+    }
+    .logo {
+        display: none;
+    }
+    .recherche {
+        padding-top: 10%;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    .rech {
+        padding-top: 1%;
+        padding-right: 1%;
+        padding-left: 2%;
+        padding-bottom: 1%;
+    }
+    .rechrch {
+        width: 100%;
+    }
+}
+
+
+/* Pour l'autocompletion */
+
+#results {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff;
+    border-color: #aaa;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    display: none;
+    width: 228px;
+}

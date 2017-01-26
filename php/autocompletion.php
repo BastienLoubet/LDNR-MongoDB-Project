@@ -1,11 +1,11 @@
 <?php
-header('Content-Type: text/javascript; charset=ton_charset');
+header('Content-Type: text/javascript');
 ?>
 (function () {
     'use strict';
-    var inputId = <?php $_POST['inputId']; ?>;
-    var collectionName=<?php $_POST['collectionName']; ?>;
-    var divResultId=<?php $_POST['divResultId']; ?>;
+    var inputId = <?php echo "'".$_GET['inputId']."'"; ?>;
+    var collectionName=<?php echo "'".$_GET['collectionName']."'"; ?>;
+    var divResultId=<?php echo "'".$_GET['divResultId']."'"; ?>;
 
     function add_error_check(xhr) { // some error checks
         myxhr.addEventListener('load', function () {
@@ -127,6 +127,7 @@ header('Content-Type: text/javascript; charset=ton_charset');
     }
 
     function add_listeners(xhr) {
+                console.log(inputId);
         (document.getElementById(inputId)).addEventListener('keyup', function (e) {
             handle_keypress(e, xhr);
         })

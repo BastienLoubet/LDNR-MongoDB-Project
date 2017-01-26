@@ -2,3 +2,4 @@
 -finir changeRegion.php
 -finir changeDept.php
 -faire la documentation
+-faire le lien dans la barre de navigation pour maint.php et deconnect.php
