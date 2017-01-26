@@ -34,12 +34,14 @@ if(!empty($_POST['identifiant'])) //si l'identifiant existe deja on rempli le ch
 echo '<input type="text" id="identifiant" class="inputclass" name="identifiant" value="'.$identifiant.'"/>'."\n";
 echo '<label for="pwd">Mot de passe</label>';
 echo '<input id="pwd" type="password" class="inputclass" name="mot_de_passe" value=""/>'."\n";
+
+echo '</div>'."\n";
 if(isset($_GET["Erreur"])) {
 echo '<div class="error">';
 echo $_GET["Erreur"];
 echo '</div>';
 }
-echo '</div>'."\n";
+echo '<br>';
 echo '<div class="auth_submit_zone">'."\n";
 echo '<input class="submit auth__auth_submit" type="submit" name="Connexion" value="Connexion"/>'."\n";
 echo '</div>'."\n";
