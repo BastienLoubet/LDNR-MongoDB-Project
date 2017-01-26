@@ -37,6 +37,7 @@ try{
                        'multi'=> true ]]  
 					 ]);
 		$cursor = $mongo->executeCommand('geo_france', $command);
+		redirect_error('maint.php',"La région $regionToChange s'appelle maintenant $newRegionName",'changeRegionErreur');
 	 }
 	 else
 	 {
