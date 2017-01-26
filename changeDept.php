@@ -20,6 +20,6 @@ try{
     $mongo = new MongoDB\Driver\Manager($dsn);
     
 }catch(Exception $e){
-    redirect_error('maint.php',$e->getMessage(),'changeDeptErreur')
+    redirect_error('maint.php',$e->getMessage(),'changeDeptErreur');
     exit();
 }
