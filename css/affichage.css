@@ -5,18 +5,19 @@ span {
 }
 
 .label {
-    color: deeppink;
-    border-bottom: 1px solid;
+    color: white;
     margin-right: 0.5em;
 }
 
 .affichage {
-    align-content: center;
-    text-align: center;
-    margin-top: 1.5em;
+    padding top: 2%;
+    padding-bottom: 2%;
+    padding-right: 10%;
+    padding-left: 45%;
 }
 
 .param {
-    border: 1px solid #FF6347;
-    margin-bottom: 2em;
+    background: linear-gradient( #022841, #479cd3, #479cd3);
+    border-radius: 20px;
+    border: 1px solid #44aed1;
 }

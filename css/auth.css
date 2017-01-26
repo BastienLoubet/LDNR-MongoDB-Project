@@ -5,6 +5,14 @@ legend {
     border: 1px solid #44aed1;
 }
 
+.logo {
+    padding-top: 3%;
+    padding-left: 2%;
+    display: flex;
+    flex: left;
+    position: absolute;
+}
+
 .recherche {
     display: flex;
     flex-direction: column;

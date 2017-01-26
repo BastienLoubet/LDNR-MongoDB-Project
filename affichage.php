@@ -11,6 +11,7 @@ require_once('./php/basic_functions.php');
 make_html_start('Template','./css/affichage.css');
 function afficheparam(string $arg, string $label){
   if(isset($arg)){
+      
       echo"<div class='affichage'>";
       echo "<span class='label'> $label</span>\n";
 	  echo "<span class='res'> $arg</span>\n";
@@ -22,17 +23,20 @@ make_nav_bar();
 
 $cp=[];
 
-$atab=[[$_GET['nomVille'],'nom:'],
+$atab=[[$_GET['nomVille'],'Nom:'],
        [$_GET['nomDept'].' ('.$_GET['codeDept'].')','Département:'],
        [$_GET['nomRegion'],'Region:'],
        [$_GET['cp'],'code postal:'],
        [$_GET['lat'],'lattitude:'],
        [$_GET['lon'],'longitude:'],
        [$_GET['pop'],'population:']];
+echo '<img src="./img/newlog1.png" alt="carte" class="logo">';
+echo '<div class="recherche">';
 echo"<div class='param'>";
 foreach($atab as $val){
     afficheparam($val[0],$val[1]);
 }
+echo"</div>";
 echo"</div>";
 
 make_html_end();

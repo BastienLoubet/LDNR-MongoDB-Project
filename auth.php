@@ -17,7 +17,7 @@ require_once('./php/basic_functions.php');
 make_html_start('Authentification','./css/auth.css');
 
 make_nav_bar();
-echo '<img src="./img/newlog1.png" alt="carte" class="cart">';
+echo '<img src="./img/newlog1.png" alt="carte" class="logo">';
 $identifiant = "";//variable recevant l'identifiant s'il est deja défini dans la variable $_POST.
 
 //Le code HTML permettant de générer le formulaire de connexion
