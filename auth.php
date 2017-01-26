@@ -38,12 +38,13 @@ echo '</div>'."\n";
 echo '<div class="auth_submit_zone">'."\n";
 echo '<input class="submit auth__auth_submit" type="submit" name="Connexion" value="Connexion"/>'."\n";
 echo '</div>'."\n";
-echo '</fieldset>'."\n";
-echo '</form>'."\n";
-echo '</div>'."\n";
 if(isset($_GET["Erreur"])) {
 echo '<div class="error">';
 echo $_GET["Erreur"];
 echo '</div>';
 }
+echo '</fieldset>'."\n";
+echo '</form>'."\n";
+echo '</div>'."\n";
+
 make_html_end();
