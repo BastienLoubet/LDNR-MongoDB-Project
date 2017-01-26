@@ -20,14 +20,10 @@ echo '<legend>Rechercher une ville</legend>'."\n";
 echo '<div class="rech">';
 echo '<form method="get" action="./select.php">';
 
-/*InputGenerator ("villes" , "Villes","id='villes' autocomplete='off'");
-echo '<div id="resultsVilles" class="results"></div>';*/
-InputGeneratorAutocomplete('villes',"Villes",'resultsVilles','villes');
-//InputGenerator ("dept" , "Département","id='dept' autocomplete='off'");
-//echo '<div id="resultsDept" class="results"></div>';
-InputGeneratorAutocomplete('dept',"Département",'resultsDept','departements');
-//InputGenerator ("region" , "Régions");
-InputGeneratorAutocomplete('region',"Régions",'resultsRegion','regions');
+
+InputGeneratorAutocomplete('villes','Villes','resultsVilles','villes');
+InputGeneratorAutocomplete('dept','Département','resultsDept','departements');
+InputGeneratorAutocomplete('region','Régions','resultsRegion','regions');
 echo '<input class="submit" type="submit" name="accueil" value=Rechercher>';
 
 if(isset($_GET['erreur'])){
@@ -38,5 +34,4 @@ echo '</div>';
 echo '</fieldset>';
 echo '</div>';
 
-echo '<script src="./php/autocompletion.php?inputId=villes&collectionName=villes&divResultId=resultsVilles"></script>';
 make_html_end();

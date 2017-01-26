@@ -56,9 +56,9 @@ function mongoSearch($name,$mongo){
                 'nomDept' => $dDept->nom,
                 'nomRegion' => $dRegion->nom,
                 'cp' => $dVille->cp,
-                'lon' => $dVille->lon,
-                'lat' => $dVille->lat,
-                'pop' => $dVille->pop,
+                'lon' => ((isset($dVille->lon))?$dVille->lon:''),
+                'lat' => ((isset($dVille->lat))?$dVille->lat:''),
+                'pop' => ((isset($dVille->pop))?$dVille->pop:''),
                 'codeDept'=> $dDept->code
                ];
         $i++;
