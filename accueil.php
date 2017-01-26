@@ -8,11 +8,6 @@ la région ou se situe la ville (optionnel),<input name=’region’
 un bouton de soumission du formulaire.
 */ 
 require_once('./php/basic_functions.php');
-function InputGeneratorAutocomplete(string $inputId,string $placeholder,string $divResultId,string $collectionName){
-    InputGenerator ($inputId , $placeholder,"id='$inputId' autocomplete='off'");
-    echo "<div id='$divResultId' class='results'></div>";
-    echo "<script src='./php/autocompletion.php?inputId=$inputId&collectionName=$collectionName&divResultId=$divResultId'></script>";
-}
 
 make_html_start("Page d'accueil",'./css/accueil.css'); 
 make_nav_bar();
