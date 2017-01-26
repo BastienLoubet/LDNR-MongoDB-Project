@@ -28,3 +28,8 @@ span {
     border-radius: 20px;
     border: 1px solid #44aed1;
 }
+
+/* pour les li de la page de doc */
+li {
+    float: none;
+}
