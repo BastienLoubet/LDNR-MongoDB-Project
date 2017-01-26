@@ -3,6 +3,8 @@ legend {
     border-radius: 10px;
     color: lightblue;
     border: 1px solid #44aed1;
+    padding-left: 1%;
+    padding-right: 2%;
 }
 
 .logo {
@@ -21,7 +23,6 @@ legend {
     display: flex;
     flex-direction: column;
     margin-bottom: 3%;
-    height: 80%;
 }
 
 .auth_submit_zone {
