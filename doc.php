@@ -20,7 +20,7 @@ echo"</div>";
 
 echo "<div class='res'>";
 echo "Choses qui reste à faire:";
-echo html('ul',html('li','Finir changeVille.php.').html('li','Pas de check-box pour la fusion des regions sur la page de maintenance.').html('li','pas de dessin de la carte des départements.'));
+echo html('ul',html('li','Finir changeVille.php.',"listdoc").html('li','Pas de check-box pour la fusion des regions sur la page de maintenance.',"listdoc").html('li','pas de dessin de la carte des départements.',"listdoc"));
 echo"</div>";
 
 make_html_end();

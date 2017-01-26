@@ -30,6 +30,6 @@ span {
 }
 
 /* pour les li de la page de doc */
-li {
+li.listdoc {
     float: none;
 }
