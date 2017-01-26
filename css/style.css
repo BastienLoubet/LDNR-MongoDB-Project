@@ -54,7 +54,7 @@ legend {
     padding-right: 10%;
     padding-left: 20%;
     padding-bottom: 14%;
-    background-image: url("./france.png"), linear-gradient( #022841, #479cd3);
+    background-image: url("./france.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

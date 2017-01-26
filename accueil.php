@@ -18,7 +18,7 @@ echo '<div class="recherche">';
 echo '<fieldset>';
 echo '<div class="rech">';
 echo '<h1>';
-echo 'Entrez le nom de la ville';
+echo 'Cherchez une ville';
 echo '</h1>';
 echo '<form method="get" action="./select.php">';
 InputGenerator ("villes" , "Villes","id='search' autocomplete='off'");

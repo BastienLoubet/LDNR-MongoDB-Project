@@ -13,10 +13,15 @@ legend {
     position: absolute;
 }
 
+.auth_champs {
+    background-image: url("./cnx.png");
+}
+
 .recherche {
     display: flex;
     flex-direction: column;
     margin-bottom: 3%;
+    height: 80%;
 }
 
 .auth_submit_zone {
@@ -26,11 +31,13 @@ legend {
 }
 
 .auth_champs {
+    color: white;
+    z-index: 10;
+    padding-top: 3%;
+    padding-right: 10%;
+    padding-left: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 3%;
-    padding-left: 5%;
-    padding-top: 3%;
-    flex-wrap: wrap;
 }
