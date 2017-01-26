@@ -21,7 +21,7 @@ echo '<h1>';
 echo 'Entrez le nom de la ville';
 echo '</h1>';
 echo '<form method="get" action="./select.php">';
-InputGenerator ("villes" , "Villes");
+InputGenerator ("villes" , "Villes","id=\"search\"");
 InputGenerator ("dept" , "Département");
 InputGenerator ("region" , "Régions");
 echo '<input class="submit" type="submit" name="accueil" value=Rechercher>';
@@ -33,4 +33,5 @@ echo '</div>';
 echo '</fieldset>';
 echo '</div>';
 
+echo '<script src="./js/autocompletion.js"></script>';
 make_html_end();
