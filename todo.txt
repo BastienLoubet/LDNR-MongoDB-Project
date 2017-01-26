@@ -1,11 +1,4 @@
--ajouter affichage d'erreur dans accueil.php
--modifier make_html_start(,) pour que si appeller sans deuxieme argument il n'inclu que le style.css (FAIT PAR BASTIEN)
--auto completion sur accueil.php
-<<<<<<< HEAD
--rajouter une gestion d'erreur de connexion (mot ou login faux) dans verif.php
-=======
--finir verif.php
 -finir changeVille.php
 -finir changeRegion.php
 -finir changeDept.php
->>>>>>> 2f91ffe099e0bea1e85747f6211f2bf365eec44d
+-faire la documentation
