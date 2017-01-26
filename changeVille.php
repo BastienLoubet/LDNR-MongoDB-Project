@@ -9,13 +9,17 @@ recoit $_GET['pop'] et $_GET['cp'] pour changer la population et le code postal 
 require_once('./php/basic_functions.php');
 require_once('./php/test_connect.php');
 
+if( (!isset($_GET['ville'])) || $_GET['ville']=='' ){
+    redirect_error('maint.php','Veuillez preciser la ville.','changeVilleErreur');
+}
+
 try{
     // les paramètres de connexion
     $dsn='mongodb://localhost:27017';
     // création de l'instance de connexion
     $mongo = new MongoDB\Driver\Manager($dsn);
     
-}(Exception $e){
-    header("Location: ./maint.php?".http_build_query($_GET).'&changeVilleErreur='.urlencode('$e->getMessage()'));
+}catch(Exception $e){
+    redirect_error('maint.php',$e->getMessage(),'changeVilleErreur');
     exit();
 }

@@ -55,3 +55,17 @@ function make_html_start(string $title, string $cssfile='') {
 function make_html_end(){
     echo '</body></html>';
 }
+
+//La creation des inputs et le chargement de leurs valeurs
+function InputGenerator ($name="nom",$plholder="placeholder") {
+    if(isset($_GET[$name])){
+        $setValue = "value='".htmlspecialchars($_GET[$name])."'";
+    }else {$setValue='';}
+    echo "<input type='text' class='rechrch' name=$name placeholder=$plholder $setValue><br>";
+}
+
+//fonction d'erreur avec redirection et renvoi des parametres passe en get
+function redirect_error(string $url,string $message,string $errorname='error'){
+    header("Location: ./$url?".http_build_query($_GET)."&$errorname=".urlencode($message));
+    exit();
+}

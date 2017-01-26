@@ -23,9 +23,7 @@ make_nav_bar();
 echo '<div class="logo">';
 echo '<img src="./img/newlog1.png" alt="carte" class="cart">';
 echo '</div>';
-function InputGenerator ($name="nom",$plholder="placeholder") {
-    echo "<input type='text' class='rechrch' name=$name placeholder=$plholder><br>";
-}
+
 echo '<div class="recherche">';
 echo '<fieldset>';
 echo '<div class="rech">';
@@ -40,7 +38,9 @@ InputGenerator ("region" , "Régions");
 echo "<p> entree a modifier </p>\n";
 InputGenerator ("cp" , "Code postal");
 InputGenerator ("pop" , "Population");
-
+if(isset($_GET['changeRegionError'])){
+    error($_GET['changeVilleErreur']);
+}
 echo '<input class="submit" type="submit" name="maint" value=Remplacer>';
 echo '</form>';
 
@@ -52,9 +52,9 @@ if($_SESSION['connect']=='admin'){
     echo "<p> entrée à modifier </p>\n";
     InputGenerator ("newRegionName" , "Nouveau nom");
     echo '<input class="submit" type="submit" name="maint" value=Remplacer>';
-        if(isset($_GET['changeRegionError'])){
-            error($_GET['changeRegionError']);
-        }
+    if(isset($_GET['changeRegionError'])){
+        error($_GET['changeRegionError']);
+    }
     echo '</form>';
 }
 

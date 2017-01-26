@@ -100,7 +100,7 @@ try{
     
     if($name == ''){
         //renvoie un message d'erreur
-        header("Location: ./accueil.php?erreur=".urlencode('Le nom doit être renseigné !'));
+        header("Location: ./accueil.php?".http_build_query($_GET)."&erreur=".urlencode('Le nom doit être renseigné !'));
         exit();
     }
 
