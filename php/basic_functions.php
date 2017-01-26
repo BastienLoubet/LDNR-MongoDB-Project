@@ -57,11 +57,11 @@ function make_html_end(){
 }
 
 //La creation des inputs et le chargement de leurs valeurs
-function InputGenerator ($name="nom",$plholder="placeholder") {
+function InputGenerator ($name="nom",$plholder="placeholder",$options='') {
     if(isset($_GET[$name])){
         $setValue = "value='".htmlspecialchars($_GET[$name])."'";
     }else {$setValue='';}
-    echo "<input type='text' class='rechrch' name=$name placeholder=$plholder $setValue><br>";
+    echo "<input type='text' class='rechrch' name=$name placeholder=$plholder $setValue $options><br>";
 }
 
 //fonction d'erreur avec redirection et renvoi des parametres passe en get

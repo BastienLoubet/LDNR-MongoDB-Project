@@ -33,4 +33,5 @@ echo '</div>';
 echo '</fieldset>';
 echo '</div>';
 
+echo '<script src="./js/autocompletion.js"></script>';
 make_html_end();
