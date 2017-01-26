@@ -28,7 +28,7 @@ try{
 	$listRegion = my_query(['nom' => $regionToChange],[], $mongo,'geo_france.regions');
 	 $Region=$listRegion->toArray()[0];
      $result = count($Region);
-	 if($result = 1)
+	 if($result == 1)
 	 {
 		  $bulk = new MongoDB\Driver\BulkWrite();
 		  $bulk->update(['nom' => $newRegionName]);
