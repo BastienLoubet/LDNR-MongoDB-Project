@@ -33,9 +33,18 @@ function make_nav_bar(){
     echo '<li>';
     echo'<a href="accueil.php">Accueil</a>';
     echo '</li>';
-    echo '<li>';
-    echo'<a href="auth.php">Connexion</a>';
-    echo '</li>';
+    if(session_status() == PHP_SESSION_ACTIVE){
+        echo '<li>';
+        echo'<a href="maint.php">Maintenance</a>';
+        echo '</li>';
+        echo '<li>';
+        echo'<a href="deconnect.php">Déconnexion</a>';
+        echo '</li>';
+    }else{
+        echo '<li>';
+        echo'<a href="auth.php">Connexion</a>';
+        echo '</li>';
+    }
     echo '</ul>';
 }
 
@@ -61,7 +70,7 @@ function InputGenerator ($name="nom",$plholder="placeholder",$options='') {
     if(isset($_GET[$name])){
         $setValue = "value='".htmlspecialchars($_GET[$name])."'";
     }else {$setValue='';}
-    echo "<input type='text' class='rechrch' name=$name placeholder=$plholder $setValue $options><br>";
+    echo "<div><input type='text' class='rechrch' name=$name placeholder=$plholder $setValue $options></div>";
 }
 
 //Input generator avec autocompletion
