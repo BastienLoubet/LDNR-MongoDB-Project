@@ -11,7 +11,7 @@ make_html_start('Documentation','./css/affichage.css');
 
 make_nav_bar();
 
-echo "<div class='recherche'> <img src='./img/map_city_search.svg'> </div>\n";
+echo "<div class='recherche'> <img src='./img/Map_City_Search.svg'> </div>\n";
 echo "<div class='res'>";
 echo '
 Voici le schema de navigation de notre site. Il est divise en deux parties: Une centré sur le select.php pour afficher les informations des villes et une centré sur maint.php pour effectuer les opérations de maintenances.
