@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Généré par Microsoft Visio, SVG Export Map_City_Search.svg Page 1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="7.77275in" height="7.78429in"
+		viewBox="0 0 559.638 560.469" xml:space="preserve" color-interpolation-filters="sRGB" class="st14">
+	<v:documentProperties v:langID="1036" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {visibility:visible}
+		.st2 {fill:#5b9bd5;fill-opacity:0.22;filter:url(#filter_2)}
+		.st3 {fill:none;filter:url(#filter_2);stroke:#5b9bd5;stroke-opacity:0.22}
+		.st4 {fill:#5b9bd5}
+		.st5 {stroke:#c7c8c8;stroke-width:0.25}
+		.st6 {fill:#5b9bd5;fill-opacity:0.22;filter:url(#filter_2);stroke:#5b9bd5;stroke-opacity:0.22}
+		.st7 {fill:#5b9bd5;stroke:#c7c8c8;stroke-width:0.25}
+		.st8 {fill:#feffff;font-family:Calibri;font-size:1.00001em}
+		.st9 {marker-end:url(#mrkr4-104);stroke:#5b9bd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st10 {fill:#5b9bd5;fill-opacity:1;stroke:#5b9bd5;stroke-opacity:1;stroke-width:0.28409090909091}
+		.st11 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
+		.st12 {fill:#4f87bb;font-family:Calibri;font-size:0.666664em}
+		.st13 {fill:#ffffff;stroke:none;stroke-linecap:butt}
+		.st14 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend4">
+			<path d="M 2 1 L 0 0 L 2 -1 L 2 1 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr4-104" class="st10" v:arrowType="4" v:arrowSize="2" v:setback="7.04" refX="-7.04" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3.52,-3.52) "/>
+		</marker>
+	</defs>
+	<defs id="Filters">
+		<filter id="filter_2">
+			<feGaussianBlur stdDeviation="2"/>
+		</filter>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Page 1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="Lien" v:index="0"/>
+		<g id="group2-1" transform="translate(171.691,-400.732)" v:mID="2" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<title>Page d&#39;accueil</title>
+			<g id="shape3-2" v:mID="3" v:groupContext="shape" transform="translate(0,-4.69183)">
+				<title>Feuille.3</title>
+				<g id="shadow3-3" v:groupContext="shadow" v:shadowOffsetX="0.345598" v:shadowOffsetY="-1.97279" v:shadowType="1"
+						transform="matrix(1,0,0,1,0.345598,1.97279)" class="st1">
+					<path d="M0 516.68 L0 560.47 L31.28 560.47 L31.28 525.44 L22.52 516.68 L0 516.68 Z" class="st2"/>
+					<path d="M0 516.68 L0 560.47 L31.28 560.47 L31.28 525.44 L22.52 516.68 L0 516.68" class="st3"/>
+					<path d="M22.52 516.68 L22.52 525.44 L31.28 525.44" class="st3"/>
+				</g>
+				<path d="M0 516.68 L0 560.47 L31.28 560.47 L31.28 525.44 L22.52 516.68 L0 516.68 Z" class="st4"/>
+				<path d="M0 516.68 L0 560.47 L31.28 560.47 L31.28 525.44 L22.52 516.68 L0 516.68" class="st5"/>
+				<path d="M22.52 516.68 L22.52 525.44 L31.28 525.44" class="st5"/>
+			</g>
+			<g id="group4-12" transform="translate(6.25577,0)" v:mID="4" v:groupContext="group">
+				<title>Feuille.4</title>
+				<g id="shape5-13" v:mID="5" v:groupContext="shape" transform="translate(27.369,-24.3975)">
+					<title>Feuille.5</title>
+					<g id="shadow5-14" v:groupContext="shadow" v:shadowOffsetX="0.3456" v:shadowOffsetY="-1.9728" v:shadowType="1"
+							transform="matrix(1,0,0,1,0.3456,1.9728)" class="st1">
+						<rect x="0" y="547.332" width="4.88732" height="13.1371" class="st6"/>
+					</g>
+					<rect x="0" y="547.332" width="4.88732" height="13.1371" class="st7"/>
+				</g>
+				<g id="shape6-18" v:mID="6" v:groupContext="shape" transform="translate(3.90986,0)">
+					<title>Feuille.6</title>
+					<g id="shadow6-19" v:groupContext="shadow" v:shadowOffsetX="0.3456" v:shadowOffsetY="-1.9728" v:shadowType="1"
+							transform="matrix(1,0,0,1,0.3456,1.9728)" class="st1">
+						<path d="M0 560.47 L31.28 560.47 L31.28 536.81 L15.64 526.84 L0 536.81 L0 560.47 Z" class="st6"/>
+					</g>
+					<path d="M0 560.47 L31.28 560.47 L31.28 536.81 L15.64 526.84 L0 536.81 L0 560.47 Z" class="st7"/>
+				</g>
+				<g id="shape7-23" v:mID="7" v:groupContext="shape" transform="translate(0,-20.7222)">
+					<title>Feuille.7</title>
+					<g id="shadow7-24" v:groupContext="shadow" v:shadowOffsetX="0.3456" v:shadowOffsetY="-1.9728" v:shadowType="1"
+							transform="matrix(1,0,0,1,0.3456,1.9728)" class="st1">
+						<path d="M3.91 560.47 L0 560.47 L19.55 544.83 L39.1 560.47 L35.19 560.47 L19.55 548.27 L3.91 560.47 Z"
+								class="st6"/>
+					</g>
+					<path d="M3.91 560.47 L0 560.47 L19.55 544.83 L39.1 560.47 L35.19 560.47 L19.55 548.27 L3.91 560.47 Z"
+							class="st7"/>
+				</g>
+				<g id="shape8-28" v:mID="8" v:groupContext="shape" transform="translate(14.662,0)">
+					<title>Feuille.8</title>
+					<g id="shadow8-29" v:groupContext="shadow" v:shadowOffsetX="0.3456" v:shadowOffsetY="-1.9728" v:shadowType="1"
+							transform="matrix(1,0,0,1,0.3456,1.9728)" class="st1">
+						<rect x="0" y="544.204" width="9.77464" height="16.265" class="st6"/>
+					</g>
+					<rect x="0" y="544.204" width="9.77464" height="16.265" class="st7"/>
+				</g>
+			</g>
+		</g>
+		<g id="shape11-33" v:mID="11" v:groupContext="shape" transform="translate(155.154,-143.366)">
+			<title>Page web.11</title>
+			<desc>Affichage.php</desc>
+			<v:userDefs>
+				<v:ud v:nameU="min_width" v:val="VT0(0.47615134648611):1"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="min_width" v:prompt="" v:val="VT0(0.94488188976378):1"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="39.2138" cy="543.461" width="78.43" height="34.0157"/>
+			<g id="shadow11-34" v:groupContext="shadow" v:shadowOffsetX="0.3456" v:shadowOffsetY="-1.9728" v:shadowType="1"
+					v:shadowAngle="-120" transform="matrix(1,0,0,1,0.3456,1.9728)" class="st1">
+				<rect x="0" y="526.453" width="78.4276" height="34.0157" rx="9" ry="9" class="st6"/>
+			</g>
+			<rect x="0" y="526.453" width="78.4276" height="34.0157" rx="9" ry="9" class="st7"/>
+			<text x="5.36" y="547.06" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Affichage.php</text>		</g>
+		<g id="shape12-39" v:mID="12" v:groupContext="shape" transform="translate(317.675,-407.965)">
+			<title>Page web.12</title>
+			<desc>Auth.php</desc>
+			<v:userDefs>
+				<v:ud v:nameU="min_width" v:val="VT0(0.47615134648611):1"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="min_width" v:prompt="" v:val="VT0(0.7810066931658):1"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="34.0157" cy="543.461" width="68.04" height="34.0157"/>
+			<g id="shadow12-40" v:groupContext="shadow" v:shadowOffsetX="0.3456" v:shadowOffsetY="-1.9728" v:shadowType="1"
+					v:shadowAngle="-120" transform="matrix(1,0,0,1,0.3456,1.9728)" class="st1">
+				<rect x="0" y="526.453" width="68.0315" height="34.0157" rx="9" ry="9" class="st6"/>
+			</g>
+			<rect x="0" y="526.453" width="68.0315" height="34.0157" rx="9" ry="9" class="st7"/>
+			<text x="11.26" y="547.06" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Auth.php</text>		</g>
+		<g id="shape13-45" v:mID="13" v:groupContext="shape" transform="translate(436.159,-208.563)">
+			<title>Page web.13</title>
+			<desc>changeDept.php</desc>
+			<v:userDefs>
+				<v:ud v:nameU="min_width" v:val="VT0(0.47615134648611):1"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="min_width" v:prompt="" v:val="VT0(0.94488188976378):1"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="45.6945" cy="543.461" width="91.39" height="34.0157"/>
+			<g id="shadow13-46" v:groupContext="shadow" v:shadowOffsetX="0.3456" v:shadowOffsetY="-1.9728" v:shadowType="1"
+					v:shadowAngle="-120" transform="matrix(1,0,0,1,0.3456,1.9728)" class="st1">
+				<rect x="0" y="526.453" width="91.389" height="34.0157" rx="9" ry="9" class="st6"/>
+			</g>
+			<rect x="0" y="526.453" width="91.389" height="34.0157" rx="9" ry="9" class="st7"/>
+			<text x="5.36" y="547.06" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>changeDept.php</text>		</g>
+		<g id="shape14-51" v:mID="14" v:groupContext="shape" transform="translate(431.238,-109.35)">
+			<title>Page web.14</title>
+			<desc>changeRegion.php</desc>
+			<v:userDefs>
+				<v:ud v:nameU="min_width" v:val="VT0(0.47615134648611):1"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="min_width" v:prompt="" v:val="VT0(0.94488188976378):1"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="50.6164" cy="543.461" width="101.24" height="34.0157"/>
+			<g id="shadow14-52" v:groupContext="shadow" v:shadowOffsetX="0.3456" v:shadowOffsetY="-1.9728" v:shadowType="1"
+					v:shadowAngle="-120" transform="matrix(1,0,0,1,0.3456,1.9728)" class="st1">
+				<rect x="0" y="526.453" width="101.233" height="34.0157" rx="9" ry="9" class="st6"/>
+			</g>
+			<rect x="0" y="526.453" width="101.233" height="34.0157" rx="9" ry="9" class="st7"/>
+			<text x="5.36" y="547.06" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>changeRegion.php</text>		</g>
+		<g id="shape15-57" v:mID="15" v:groupContext="shape" transform="translate(438.796,-316.279)">
+			<title>Page web.15</title>
+			<desc>changeVille.php</desc>
+			<v:userDefs>
+				<v:ud v:nameU="min_width" v:val="VT0(0.47615134648611):1"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="min_width" v:prompt="" v:val="VT0(0.94488188976378):1"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="44.3763" cy="543.461" width="88.76" height="34.0157"/>
+			<g id="shadow15-58" v:groupContext="shadow" v:shadowOffsetX="0.3456" v:shadowOffsetY="-1.9728" v:shadowType="1"
+					v:shadowAngle="-120" transform="matrix(1,0,0,1,0.3456,1.9728)" class="st1">
+				<rect x="0" y="526.453" width="88.7526" height="34.0157" rx="9" ry="9" class="st6"/>
+			</g>
+			<rect x="0" y="526.453" width="88.7526" height="34.0157" rx="9" ry="9" class="st7"/>
+			<text x="5.36" y="547.06" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>changeVille.php</text>		</g>
+		<g id="shape16-63" v:mID="16" v:groupContext="shape" transform="translate(3.0294,-208.563)">
+			<title>Page web.16</title>
+			<desc>choix.php</desc>
+			<v:userDefs>
+				<v:ud v:nameU="min_width" v:val="VT0(0.47615134648611):1"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="min_width" v:prompt="" v:val="VT0(0.80997931889822):1"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="34.0157" cy="543.461" width="68.04" height="34.0157"/>
+			<g id="shadow16-64" v:groupContext="shadow" v:shadowOffsetX="0.3456" v:shadowOffsetY="-1.9728" v:shadowType="1"
+					v:shadowAngle="-120" transform="matrix(1,0,0,1,0.3456,1.9728)" class="st1">
+				<rect x="0" y="526.453" width="68.0315" height="34.0157" rx="9" ry="9" class="st6"/>
+			</g>
+			<rect x="0" y="526.453" width="68.0315" height="34.0157" rx="9" ry="9" class="st7"/>
+			<text x="10.21" y="547.06" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>choix.php</text>		</g>
+		<g id="shape17-69" v:mID="17" v:groupContext="shape" transform="translate(309.146,-5.3478)">
+			<title>Page web.17</title>
+			<desc>Deconnect.php</desc>
+			<v:userDefs>
+				<v:ud v:nameU="min_width" v:val="VT0(0.47615134648611):1"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="min_width" v:prompt="" v:val="VT0(0.94488188976378):1"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="42.5451" cy="543.461" width="85.1" height="34.0157"/>
+			<g id="shadow17-70" v:groupContext="shadow" v:shadowOffsetX="0.3456" v:shadowOffsetY="-1.9728" v:shadowType="1"
+					v:shadowAngle="-120" transform="matrix(1,0,0,1,0.3456,1.9728)" class="st1">
+				<rect x="0" y="526.453" width="85.0903" height="34.0157" rx="9" ry="9" class="st6"/>
+			</g>
+			<rect x="0" y="526.453" width="85.0903" height="34.0157" rx="9" ry="9" class="st7"/>
+			<text x="5.36" y="547.06" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Deconnect.php</text>		</g>
+		<g id="shape18-75" v:mID="18" v:groupContext="shape" transform="translate(317.675,-208.563)">
+			<title>Page web.18</title>
+			<desc>Maint.php</desc>
+			<v:userDefs>
+				<v:ud v:nameU="min_width" v:val="VT0(0.47615134648611):1"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="min_width" v:prompt="" v:val="VT0(0.85758674077322):1"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="34.0157" cy="543.461" width="68.04" height="34.0157"/>
+			<g id="shadow18-76" v:groupContext="shadow" v:shadowOffsetX="0.3456" v:shadowOffsetY="-1.9728" v:shadowType="1"
+					v:shadowAngle="-120" transform="matrix(1,0,0,1,0.3456,1.9728)" class="st1">
+				<rect x="0" y="526.453" width="68.0315" height="34.0157" rx="9" ry="9" class="st6"/>
+			</g>
+			<rect x="0" y="526.453" width="68.0315" height="34.0157" rx="9" ry="9" class="st7"/>
+			<text x="8.5" y="547.06" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Maint.php</text>		</g>
+		<g id="shape19-81" v:mID="19" v:groupContext="shape" transform="translate(160.352,-273.759)">
+			<title>Page web.19</title>
+			<desc>Select.php</desc>
+			<v:userDefs>
+				<v:ud v:nameU="min_width" v:val="VT0(0.47615134648611):1"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="min_width" v:prompt="" v:val="VT0(0.86060035161306):1"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="34.0157" cy="543.461" width="68.04" height="34.0157"/>
+			<g id="shadow19-82" v:groupContext="shadow" v:shadowOffsetX="0.3456" v:shadowOffsetY="-1.9728" v:shadowType="1"
+					v:shadowAngle="-120" transform="matrix(1,0,0,1,0.3456,1.9728)" class="st1">
+				<rect x="0" y="526.453" width="68.0315" height="34.0157" rx="9" ry="9" class="st6"/>
+			</g>
+			<rect x="0" y="526.453" width="68.0315" height="34.0157" rx="9" ry="9" class="st7"/>
+			<text x="8.39" y="547.06" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Select.php</text>		</g>
+		<g id="shape21-87" v:mID="21" v:groupContext="shape" transform="translate(317.675,-316.279)">
+			<title>Page web.21</title>
+			<desc>Verif.php</desc>
+			<v:userDefs>
+				<v:ud v:nameU="min_width" v:val="VT0(0.47615134648611):1"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="min_width" v:prompt="" v:val="VT0(0.7783211462908):1"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="34.0157" cy="543.461" width="68.04" height="34.0157"/>
+			<g id="shadow21-88" v:groupContext="shadow" v:shadowOffsetX="0.3456" v:shadowOffsetY="-1.9728" v:shadowType="1"
+					v:shadowAngle="-120" transform="matrix(1,0,0,1,0.3456,1.9728)" class="st1">
+				<rect x="0" y="526.453" width="68.0315" height="34.0157" rx="9" ry="9" class="st6"/>
+			</g>
+			<rect x="0" y="526.453" width="68.0315" height="34.0157" rx="9" ry="9" class="st7"/>
+			<text x="11.35" y="547.06" class="st8" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Verif.php</text>		</g>
+		<g id="group22-93" transform="translate(158.935,-488.2)" v:mID="22" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="Name" v:lbl="Nom" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Location" v:lbl="Emplacement" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Building" v:lbl="Bâtiment" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Room" v:lbl="Salle" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="Department" v:lbl="Service" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1036" v:cal="0"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Connectivité)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="ShapeType" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="1036" v:cal="0" v:val="VT4(Utilisateur)"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ShapeClass" v:prompt="" v:val="VT0(5):26"/>
+				<v:ud v:nameU="SolSH" v:prompt="" v:val="VT15({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:prompt="" v:val="VT0(2):26"/>
+			</v:userDefs>
+			<title>Utilisateur</title>
+			<g id="shape23-94" v:mID="23" v:groupContext="shape" transform="translate(18.0575,0)">
+				<title>Feuille.23</title>
+				<g id="shadow23-95" v:groupContext="shadow" v:shadowOffsetX="0.345598" v:shadowOffsetY="-1.97279" v:shadowType="1"
+						transform="matrix(1,0,0,1,0.345598,1.97279)" class="st1">
+					<path d="M26.29 498.41 A8.81 8.81 -180 1 0 8.67 498.41 A8.81 8.81 -180 1 0 26.29 498.41 ZM27.58 509.6 L7.17 509.6
+								 C3.22 509.6 0 512.82 0 516.77 L0 541.77 L5.59 541.77 L5.59 527.22 L7.45 527.22 L7.45 560.47 L16.55
+								 560.47 L16.55 545.61 C16.55 545.09 16.97 544.68 17.48 544.68 C18 544.68 18.42 545.09 18.42 545.61
+								 L18.42 560.47 L28.04 560.47 L28.04 527.17 L29.91 527.17 L29.91 541.77 L34.75 541.77 L34.75 516.77
+								 C34.75 512.82 31.54 509.6 27.58 509.6 Z" class="st6"/>
+				</g>
+				<path d="M26.29 498.41 A8.81 8.81 -180 1 0 8.67 498.41 A8.81 8.81 -180 1 0 26.29 498.41 ZM27.58 509.6 L7.17 509.6
+							 C3.22 509.6 0 512.82 0 516.77 L0 541.77 L5.59 541.77 L5.59 527.22 L7.45 527.22 L7.45 560.47 L16.55 560.47
+							 L16.55 545.61 C16.55 545.09 16.97 544.68 17.48 544.68 C18 544.68 18.42 545.09 18.42 545.61 L18.42 560.47
+							 L28.04 560.47 L28.04 527.17 L29.91 527.17 L29.91 541.77 L34.75 541.77 L34.75 516.77 C34.75 512.82 31.54
+							 509.6 27.58 509.6 Z" class="st7"/>
+			</g>
+		</g>
+		<g id="shape24-99" v:mID="24" v:groupContext="shape" v:layerMember="0" transform="translate(187.281,-400.732)">
+			<title>Lien dynamique</title>
+			<desc>Envoi de données</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="7.08661" cy="606.947" width="67.31" height="17.6036"/>
+			<path d="M7.09 560.47 L7.09 646.39" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="-21.6611" y="602.147" width="57.4956" height="9.59985" class="st11"/>
+			<text x="-21.66" y="609.35" class="st12" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Envoi de données</text>		</g>
+		<g id="shape25-107" v:mID="25" v:groupContext="shape" v:layerMember="0" transform="translate(160.352,-290.767)">
+			<title>Lien dynamique.25</title>
+			<desc>Envoi de données</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="-85.748" cy="560.469" width="67.31" height="17.6036"/>
+			<path d="M0 560.47 L-123.31 560.47 L-123.31 601.62" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="-114.496" y="555.669" width="57.4956" height="9.59985" class="st11"/>
+			<text x="-114.5" y="562.87" class="st12" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Envoi de données</text>		</g>
+		<g id="shape26-114" v:mID="26" v:groupContext="shape" v:layerMember="0" transform="translate(37.0451,-208.563)">
+			<title>Lien dynamique.26</title>
+			<desc>Envoi de données</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="34.96" cy="608.658" width="67.31" height="17.6036"/>
+			<path d="M0 560.47 L0 608.66 L111.07 608.66" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="6.21235" y="603.858" width="57.4956" height="9.59985" class="st13"/>
+			<text x="6.21" y="611.06" class="st12" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Envoi de données</text>		</g>
+		<g id="shape27-121" v:mID="27" v:groupContext="shape" v:layerMember="0" transform="translate(187.281,-273.759)">
+			<title>Lien dynamique.27</title>
+			<desc>Envoi de données</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="7.08661" cy="608.658" width="67.31" height="17.6036"/>
+			<path d="M7.09 560.47 L7.09 649.81" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="-21.6611" y="603.858" width="57.4956" height="9.59985" class="st11"/>
+			<text x="-21.66" y="611.06" class="st12" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Envoi de données</text>		</g>
+		<g id="shape28-128" v:mID="28" v:groupContext="shape" v:layerMember="0" transform="translate(217.045,-417.886)">
+			<title>Lien dynamique.28</title>
+			<desc>lien</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="50.315" cy="553.382" width="40" height="17.6036"/>
+			<path d="M0 553.38 L93.59 553.38" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="44.3874" y="548.582" width="11.8551" height="9.59985" class="st11"/>
+			<text x="44.39" y="555.78" class="st12" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>lien</text>		</g>
+		<g id="shape29-135" v:mID="29" v:groupContext="shape" v:layerMember="0" transform="translate(344.604,-407.965)">
+			<title>Lien dynamique.29</title>
+			<desc>Envoi de données</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="7.08661" cy="589.304" width="67.31" height="17.6036"/>
+			<path d="M7.09 560.47 L7.09 611.1" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="-21.6611" y="584.504" width="57.4956" height="9.59985" class="st13"/>
+			<text x="-21.66" y="591.7" class="st12" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Envoi de données</text>		</g>
+		<g id="shape30-142" v:mID="30" v:groupContext="shape" v:layerMember="0" transform="translate(344.604,-316.279)">
+			<title>Lien dynamique.30</title>
+			<desc>Envoi de données</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="7.08661" cy="597.319" width="67.31" height="17.6036"/>
+			<path d="M7.09 560.47 L7.09 627.13" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="-21.6611" y="592.519" width="57.4956" height="9.59985" class="st13"/>
+			<text x="-21.66" y="599.72" class="st12" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Envoi de données</text>		</g>
+		<g id="shape31-149" v:mID="31" v:groupContext="shape" v:layerMember="0" transform="translate(344.604,-208.563)">
+			<title>Lien dynamique.31</title>
+			<desc>lien</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="7.08661" cy="645.068" width="40" height="17.6036"/>
+			<path d="M7.09 560.47 L7.09 722.63" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="1.159" y="640.268" width="11.8551" height="9.59985" class="st13"/>
+			<text x="1.16" y="647.47" class="st12" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>lien</text>		</g>
+		<g id="shape32-156" v:mID="32" v:groupContext="shape" v:layerMember="0" transform="translate(385.707,-225.57)">
+			<title>Lien dynamique.32</title>
+			<path d="M0 560.47 L10.63 560.47 L10.63 452.75 L46.05 452.75" class="st9"/>
+		</g>
+		<g id="shape33-161" v:mID="33" v:groupContext="shape" v:layerMember="0" transform="translate(385.707,-218.484)">
+			<title>Lien dynamique.33</title>
+			<path d="M0 553.38 L43.41 553.38" class="st9"/>
+		</g>
+		<g id="shape34-166" v:mID="34" v:groupContext="shape" v:layerMember="0" transform="translate(385.707,-225.57)">
+			<title>Lien dynamique.34</title>
+			<path d="M0 560.47 L10.63 560.47 L10.63 659.68 L38.49 659.68" class="st9"/>
+		</g>
+		<g id="shape36-171" v:mID="36" v:groupContext="shape" v:layerMember="0" transform="translate(187.281,-523.633)">
+			<title>Lien dynamique.36</title>
+			<path d="M7.09 560.47 L7.09 627.85" class="st9"/>
+		</g>
+		<g id="shape37-176" v:mID="37" v:groupContext="shape" v:layerMember="0" transform="translate(527.548,-333.287)">
+			<title>Lien dynamique.37</title>
+			<path d="M0 560.47 L10.63 560.47 L10.63 871.4 L-126.27 871.4" class="st9"/>
+		</g>
+		<g id="shape38-181" v:mID="38" v:groupContext="shape" v:layerMember="0" transform="translate(527.548,-225.57)">
+			<title>Lien dynamique.38</title>
+			<path d="M0 560.47 L10.63 560.47 L10.63 763.68 L-126.27 763.68" class="st9"/>
+		</g>
+		<g id="shape40-186" v:mID="40" v:groupContext="shape" v:layerMember="0" transform="translate(532.47,-126.358)">
+			<title>Lien dynamique.40</title>
+			<desc>Envoi de données</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="-6.48615" cy="664.471" width="67.31" height="17.6036"/>
+			<path d="M0 560.47 L3.35 560.47 A2.3622 2.3622 0 1 1 8.07 560.47 L10.63 560.47 L10.63 664.47 L-131.19 664.47"
+					class="st9"/>
+			<rect v:rectContext="textBkgnd" x="-35.2338" y="659.671" width="57.4956" height="9.59985" class="st11"/>
+			<text x="-35.23" y="666.87" class="st12" v:langID="1036"><v:paragraph v:horizAlign="1"/><v:tabList/>Envoi de données</text>		</g>
+	</g>
+</svg>
